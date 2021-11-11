@@ -67,11 +67,11 @@
 				049E1836273C494900A747F9 /* ViewController.swift */,
 				049E1846273C4D9800A747F9 /* CardModel.swift */,
 				049E1848273C4E3A00A747F9 /* CardClass.swift */,
+				049E184A273C517300A747F9 /* CardCollectionViewCell.swift */,
 				049E1838273C494900A747F9 /* Main.storyboard */,
 				049E183B273C494B00A747F9 /* Assets.xcassets */,
 				049E183D273C494B00A747F9 /* LaunchScreen.storyboard */,
 				049E1840273C494B00A747F9 /* Info.plist */,
-				049E184A273C517300A747F9 /* CardCollectionViewCell.swift */,
 			);
 			path = MatchingPictureApp;
 			sourceTree = "<group>";
