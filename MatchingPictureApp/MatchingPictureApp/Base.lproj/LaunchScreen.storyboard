@@ -27,7 +27,7 @@
                             <constraint firstItem="fnq-4g-FPy" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="0nT-Zg-J3L"/>
                             <constraint firstItem="fnq-4g-FPy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Fhe-Hl-7xP"/>
                             <constraint firstItem="fnq-4g-FPy" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="U8Q-Kw-7qo"/>
-                            <constraint firstItem="fnq-4g-FPy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aU3-ET-T3d"/>
+                            <constraint firstItem="fnq-4g-FPy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="aU3-ET-T3d"/>
                         </constraints>
                     </view>
                 </viewController>
