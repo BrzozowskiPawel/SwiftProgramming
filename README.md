@@ -15,22 +15,27 @@ Take a look and ask my questions about it❕ </br>
 
 - [Improvements](#improvements)
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  
+</details>
 ## Layout
 
 This section contains a few apps that helped me to learn layout using Storyboard. </br>
 However these apps don't work in any way, it's just a layout with no action (as this section I dedicated to layout). </br>
 Take a look at the results: </br>
 
-# Layout1 app
+### Layout1 app
 <img src="readme_files/layout2.gif" alt="layout2" width="340"/> </br>
 
- # Layou2 app
+### Layou2 app
 <img src="readme_files/layout3.gif" alt="layout3" width="340"/>  </br>
 
-# Fitness app
+### Fitness app
 <img src="readme_files/fitness.gif" alt="fintess" width="340"/>  </br>
 
-# Social Squid app
+### Social Squid app
 <img src="readme_files/SocialSquid.gif" alt="sociasquid" width="340"/>  </br>
 
 
@@ -42,5 +47,11 @@ The user needs to press the "DEAL" button to start a new round. App automaticall
 Besides using StackView in layout, I have made IBOutlet and IBActions make it works. </br>
 Take a look at details in the project 👀.</br>
 
-# Cards war game
-<img src="readme_files/cardswar.gif" alt="cardswar" width="340"/>  </br>
+<details>
+  <summary>Click to expand!</summary>
+  ### Cards war game
+ 
+ <img src="readme_files/cardswar.gif" alt="cardswar" width="340"/>  </br>
+  
+</details>
+
