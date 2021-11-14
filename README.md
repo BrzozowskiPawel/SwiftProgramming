@@ -15,40 +15,38 @@ Take a look and ask my questions about it❕ </br>
 
 - [Improvements](#improvements)
 
-<details>
-  <summary>Click to expand!</summary>
-  
-  
-</details>
+
 ## Layout
+<details>
+  <summary>Click to expand details!</summary>
+  
+  This section contains a few apps that helped me to learn layout using Storyboard. </br>
+  However these apps don't work in any way, it's just a layout with no action (as this section I dedicated to layout). </br>
+  Take a look at the results: </br>
 
-This section contains a few apps that helped me to learn layout using Storyboard. </br>
-However these apps don't work in any way, it's just a layout with no action (as this section I dedicated to layout). </br>
-Take a look at the results: </br>
+  ### Layout1 app
+  <img src="readme_files/layout2.gif" alt="layout2" width="340"/> </br>
 
-### Layout1 app
-<img src="readme_files/layout2.gif" alt="layout2" width="340"/> </br>
+  ### Layou2 app
+  <img src="readme_files/layout3.gif" alt="layout3" width="340"/>  </br>
 
-### Layou2 app
-<img src="readme_files/layout3.gif" alt="layout3" width="340"/>  </br>
+  ### Fitness app
+  <img src="readme_files/fitness.gif" alt="fintess" width="340"/>  </br>
 
-### Fitness app
-<img src="readme_files/fitness.gif" alt="fintess" width="340"/>  </br>
-
-### Social Squid app
-<img src="readme_files/SocialSquid.gif" alt="sociasquid" width="340"/>  </br>
+  ### Social Squid app
+  <img src="readme_files/SocialSquid.gif" alt="sociasquid" width="340"/>  </br>
+  </details>
 
 
 ## Card Wars
-My first bigger app was made with the help of this course. </br>
-This is a classic card war game. The purpose of this game is to compare card and user/CPU with bigger card wins. </br>
-Cards are being shown randomly as in real life. </br> 
-The user needs to press the "DEAL" button to start a new round. App automatically shows a card for user and CPU and gives a point to the winner. </br>
-Besides using StackView in layout, I have made IBOutlet and IBActions make it works. </br>
-Take a look at details in the project 👀.</br>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Click to expand details!</summary>
+  My first bigger app was made with the help of this course. </br>
+  This is a classic card war game. The purpose of this game is to compare card and user/CPU with bigger card wins. </br>
+  Cards are being shown randomly as in real life. </br> 
+  The user needs to press the "DEAL" button to start a new round. App automatically shows a card for user and CPU and gives a point to the winner. </br>
+  Besides using StackView in layout, I have made IBOutlet and IBActions make it works. </br>
+  Take a look at details in the project 👀.</br>
   ### Cards war game
  
  <img src="readme_files/cardswar.gif" alt="cardswar" width="340"/>  </br>
