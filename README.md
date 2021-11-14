@@ -16,7 +16,7 @@ Take a look and ask my questions about it❕ </br>
 - [Improvements](#improvements)
 
 
-## Layout
+## Layout - first steps in creating a perfect layout for apps!
 <details>
   <summary>Click to expand details!</summary>
   
@@ -38,7 +38,7 @@ Take a look and ask my questions about it❕ </br>
   </details>
 
 
-## Card Wars
+## Card Wars - simple user/CPU game with a lot of fun!
 <details>
   <summary>Click to expand details!</summary>
   My first bigger app was made with the help of this course. </br>
