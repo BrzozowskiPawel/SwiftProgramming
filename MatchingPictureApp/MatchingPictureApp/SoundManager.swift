@@ -9,46 +9,57 @@ import Foundation
 import AVFoundation
 
 class SoundManager {
-    var audioPlayer: AVAudioPlayer?
+    
+    var audioPlayer:AVAudioPlayer?
     
     enum SoundEffect {
         case flip
         case match
-        case nomach
+        case nomatch
         case shuffle
     }
-    // This function have enum as paramter
-    func plasySound(effect:SoundEffect) {
+    
+    func playSound(effect:SoundEffect) {
         
-        var soundFileName = ""
+        var soundFilename = ""
         
         switch effect {
-            case .flip:
-                soundFileName = "cardflip"
-            case .match:
-                soundFileName = "dingcorrect"
-            case .nomach:
-                soundFileName = "dingwrong"
-            case .shuffle:
-                soundFileName = "shuffle"
+            
+        case .flip:
+            soundFilename = "cardflip"
+            
+        case .match:
+            soundFilename = "dingcorrect"
+            
+        case .nomatch:
+            soundFilename = "dingwrong"
+            
+        case .shuffle:
+            soundFilename = "shuffle"
+            
         }
         
-        // Creating path to resoursce
-        let bundlePath = Bundle.main.path(forResource: soundFileName, ofType: ".wav")
+        // Get the path to the resource
+        let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: ".wav")
         
-        // Chechk if path is not nil. Make sur its not nil otherwise return.
+        // Check that it's not nil
         guard bundlePath != nil else {
+            // Couldn't find the resource, exit
             return
         }
         
         let url = URL(fileURLWithPath: bundlePath!)
         
-        // How to take care of throw block
         do {
+            
+            // Create the audio player
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             
+            // Play the sound effect
             audioPlayer?.play()
-        } catch {
+        }
+        catch {
+            print("Couldn't create an audio player")
             return
         }
         

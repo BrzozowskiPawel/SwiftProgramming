@@ -16,140 +16,147 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     let model = CardModel()
     var cardsArray = [Card]()
     
-    var firstFlippedCardIndex:IndexPath?
-    
     var timer:Timer?
-    var miliseconds:Int = 100 * 1000
+    var milliseconds:Int = 100 * 1000
+    
+    var firstFlippedCardIndex:IndexPath?
     
     var soundPlayer = SoundManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         cardsArray = model.getCards()
         
-        // THIS NEEDS TO BE SET UP TO INDICATE THAT VEIWCONTROLLER IS DELEGATE
-        // set the view contorller as the deatasourcse and delegate of the collection view
+        // Set the view controller as the datasource and delegate of the collection view
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        // Initalize the timer
-        // timerInterval -> times of one tick (in this case 1 ms, this if time of f = 1/T)
-        // target -> this class
-        // selector -> #selector(<my func>)
-        // userInfo -> additonal options
-        // repeats -> tiemr should loop after timerInterval
+        // Initialize the timer
         timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
-        
-        // timer can run in background, its wont be stopped while scrolling
         RunLoop.main.add(timer!, forMode: .common)
+        
         
     }
     
-    // This is called when user se tscreen
     override func viewDidAppear(_ animated: Bool) {
-        // play shufle sound
-        soundPlayer.plasySound(effect: .shuffle)
+        
+        // Play shuffle sound
+        soundPlayer.playSound(effect: .shuffle)
     }
+    
     // MARK: - Timer Methods
     
     @objc func timerFired() {
+        
         // Decrement the counter
-        miliseconds -= 1
+        milliseconds -= 1
         
         // Update the label
-        let seconds:Double = Double(miliseconds)/1000.0
-        timerLabel.text =  String(format: "Time left: %.2f", seconds)
+        let seconds:Double = Double(milliseconds)/1000.0
+        timerLabel.text = String(format: "Time left: %.2f", seconds)
         
-        // stop the timer if it 0
-        if miliseconds <= 0 {
+        // Stop the timer if it reaches zero
+        if milliseconds == 0 {
+            
+            timerLabel.textColor = UIColor.red
             timer?.invalidate()
-            timerLabel.textColor = .red
+            
             // Check if the user has cleared all the pairs
             checkForGameEnd()
         }
-        
     }
+    
 
-    // MARK: - CollectionViewDelegate methods
+    // MARK: - Collection View Delegate Methods
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        // Return number of cards
         return cardsArray.count
     }
     
-    // This metohod get call when collection view want to crete cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // get a cell as reusable cell to save up memory
+        
+        // Get a cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        // return cell
+        // Return it
         return cell
     }
     
-    
-    // Here we can configure the cell (right before dispaling)
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        // Confiure the state of the cell based on the properites of the Card that it represents
+        
+        // Configure the state of the cell based on the properties of the Card that it represents
         
         let cardCell = cell as? CardCollectionViewCell
         
-        // curent card
-        let currentCard = cardsArray[indexPath.row]
+        // Get the card from the card array
+        let card = cardsArray[indexPath.row]
         
-        // configure cell
-        cardCell?.configureCell(card: currentCard)
+        // Finish configuring the cell
+        cardCell?.configureCell(card: card)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if miliseconds <= 0 {
+        // Check if there's any time remaining. Don't let the user interact if the time is 0
+        if milliseconds <= 0 {
             return
         }
-        // get a reference to the cell that was tapped
+        
+        // Get a reference to the cell that was tapped
         let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell
         
-        // check the status of the card
-        if cell?.card?.isFlipped == false && cell?.card?.isMatched == false{
-            //flip the card up
+        // Check the status of the card to determine how to flip it
+        if cell?.card?.isFlipped == false && cell?.card?.isMatched == false {
+            
+            // Flip the card up
             cell?.flipUp()
             
-            // play shufle sound
-            soundPlayer.plasySound(effect: .flip)
+            // Play sound
+            soundPlayer.playSound(effect: .flip)
             
-            // Chech if this is fist card that wa sflipped
+            // Check if this is the first card that was flipped or the second card
             if firstFlippedCardIndex == nil {
-                // this is firtst card fillped
+                
+                // This is the first card flipped over
+                
                 firstFlippedCardIndex = indexPath
-            } else {
+                
+            }
+            else {
+                
                 // Second card that is flipped
                 
                 // Run the comparison logic
                 checkForMatch(indexPath)
             }
         }
-        
-        
     }
     
-    // MARK: game logic
+    // MARK: - Game Logic Methods
     
-    func checkForMatch(_ secondFlippedCardIndex: IndexPath){
-        // get the 2 card objects for indexes
+    func checkForMatch(_ secondFlippedCardIndex:IndexPath) {
         
+        // Get the two card objects for the two indices and see if they match
         let cardOne = cardsArray[firstFlippedCardIndex!.row]
         let cardTwo = cardsArray[secondFlippedCardIndex.row]
         
-        // Get the two collection view cells for cardone and cardtwo
+        // Get the two collection view cells that represent card one and two
         let cardOneCell = collectionView.cellForItem(at: firstFlippedCardIndex!) as? CardCollectionViewCell
         let cardTwoCell = collectionView.cellForItem(at: secondFlippedCardIndex) as? CardCollectionViewCell
         
-        // compare this two cards
+        // Compare the two cards
         if cardOne.imageName == cardTwo.imageName {
-            // its a match
             
-            // play match sound
-            soundPlayer.plasySound(effect: .match)
+            // It's a match
             
+            // Play match sound
+            soundPlayer.playSound(effect: .match)
+            
+            // Set the status and remove them
             cardOne.isMatched = true
             cardTwo.isMatched = true
             
@@ -158,59 +165,68 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
             
             // Was that the last pair?
             checkForGameEnd()
-        } else {
-            // Its not match
+        }
+        else {
             
-            // play not match sound
-            soundPlayer.plasySound(effect: .nomach)
+            // It's not a match
+            
+            // Play sound
+            soundPlayer.playSound(effect: .nomatch)
+            
+            cardOne.isFlipped = false
+            cardTwo.isFlipped = false
             
             // Flip them back over
             cardOneCell?.flipDown()
             cardTwoCell?.flipDown()
-            
         }
         
-        // reset the firstFlippedCardIndex property
+        // Reset the firstFlippedCardIndex property
         firstFlippedCardIndex = nil
     }
     
     func checkForGameEnd() {
-        // Check if there is any card that is unmatched
+        
+        // Check if there's any card that is unmatched
+        // Assume the user has won, loop through all the cards to see if all of them are matched
         var hasWon = true
         
-        for singleCard in cardsArray{
-            if singleCard.isMatched == false{
-                // We found card unmatched
+        for card in cardsArray {
+            
+            if card.isMatched == false {
+                // We've found a card that is unmatched
                 hasWon = false
-                
-                // End looping
                 break
             }
         }
-        if hasWon{
-            // User has won, show an alert
-            showAlert(title: "Congratulations!", message: "You have wont the game")
+        
+        if hasWon == true {
             
-        } else {
-            // User hasnt won yet, check if there any time left
-            if miliseconds <= 0 {
-                showAlert(title: "Time's up :(", message: "Try one more time")
+            // User has won, show an alert
+            showAlert(title: "Congratulations!", message: "You've won the game!")
+        }
+        else {
+            
+            // User hasn't won yet, check if there's any time left
+            if milliseconds <= 0 {
+                showAlert(title: "Time's Up", message: "Sorry, better luck next time!")
             }
         }
+        
     }
     
-    func showAlert(title:String, message:String){
-        // create an allert
+    func showAlert(title:String, message:String) {
+        
+        // Create the alert
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        // create action with Ok button to dismiss it
-        let okAlerAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        // Add a button for the user to dismiss it
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okAction)
         
-        // add action to the alert (othewise it wont show button)
-        alert.addAction(okAlerAction)
-        
-        // present allert with action
+        // Show the alert
         present(alert, animated: true, completion: nil)
+        
     }
     
 }

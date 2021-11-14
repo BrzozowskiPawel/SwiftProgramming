@@ -25,9 +25,9 @@
                                 <rect key="frame" x="60" y="0.0" width="792" height="393"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time left: 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoU-lC-DmT">
-                                        <rect key="frame" x="328.5" y="0.0" width="135" height="20.5"/>
+                                        <rect key="frame" x="326" y="0.0" width="140" height="20.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="135" id="Wsh-us-sA9"/>
+                                            <constraint firstAttribute="width" constant="140" id="Wsh-us-sA9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
