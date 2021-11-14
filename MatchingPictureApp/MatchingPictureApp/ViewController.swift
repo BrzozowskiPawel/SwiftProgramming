@@ -45,7 +45,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         RunLoop.main.add(timer!, forMode: .common)
         
     }
-    // IS called when user se tscreen
+    
+    // This is called when user se tscreen
     override func viewDidAppear(_ animated: Bool) {
         // play shufle sound
         soundPlayer.plasySound(effect: .shuffle)
@@ -75,11 +76,11 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cardsArray.count
     }
+    
     // This metohod get call when collection view want to crete cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // get a cell as reusable cell to save up memory
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
-        
         
         // return cell
         return cell
@@ -95,7 +96,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         // curent card
         let currentCard = cardsArray[indexPath.row]
         
-        // TODO: configure cell
+        // configure cell
         cardCell?.configureCell(card: currentCard)
     }
     
@@ -167,9 +168,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
             cardOneCell?.flipDown()
             cardTwoCell?.flipDown()
             
-            // Was that the last pair?
-            checkForGameEnd()
         }
+        
         // reset the firstFlippedCardIndex property
         firstFlippedCardIndex = nil
     }

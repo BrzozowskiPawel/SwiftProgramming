@@ -46,13 +46,12 @@ class CardCollectionViewCell: UICollectionViewCell {
     }
     
     func flipDown(speed:TimeInterval = 0.3, delay: TimeInterval = 0.5) {
+        // set the status of the card
+        card?.isFlipped = false
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay) {
             UIView.transition(from: self.frontImageView, to: self.backImageView, duration: speed, options: [.transitionFlipFromLeft, .showHideTransitionViews], completion: nil)
         }
-        
-        // set the status of the card
-        card?.isFlipped = false
         
         
     }
