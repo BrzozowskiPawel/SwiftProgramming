@@ -54,7 +54,7 @@ Take a look and ask my questions about it❕ </br>
   
 </details>
 
-## Guessing picture - guess whre are the same picture!
+## Guessing picture - guess where are the same picture!
 <details>
   <summary>Click to expand details!</summary>
   Classic game where the user has to find the same pictures. </br>
@@ -78,6 +78,6 @@ Take a look and ask my questions about it❕ </br>
   game over: </br>
   <img src="readme_files/guessing_game_over.gif" alt="guessing_game_over" width="892"/>  </br>
   
-  demo: </br>
+  game won: </br>
   <img src="readme_files/guessing_game_won.gif" alt="guessing_game_won" width="892"/>  </br>
 </details>
