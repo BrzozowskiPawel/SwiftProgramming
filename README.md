@@ -1,7 +1,8 @@
 # BasicSwiftApps - UNDER DEVELOPMENT 🏆
 
 This repo will contain a wide range of different apps written with Swift on purpose to make me a better programmer. </br>
-The level of difficulty will increase with time. I would like to relearn the basics to have solid knowledge and then make more demanding apps. </br>
+The level of difficulty will increase with time. </br>
+I would like to relearn the basics to have solid knowledge and then make more demanding apps. </br>
 All App here is part of this [course](https://codewithchris.com/). I try to learn things that I don't know and also add some extra features to them. </br>
 Take a look and ask my questions about it❕ </br>
 
@@ -13,7 +14,7 @@ Take a look and ask my questions about it❕ </br>
 
 - [Picture Guesser](#picture-guesser)
 
-- [Improvements](#improvements)
+- [Cards war game](#improvements)
 
 
 ## Layout - first steps in creating a perfect layout for apps!
@@ -53,3 +54,30 @@ Take a look and ask my questions about it❕ </br>
   
 </details>
 
+## Guessing picture - guess whre are the same picture!
+<details>
+  <summary>Click to expand details!</summary>
+  Classic game where the user has to find the same pictures. </br>
+  Each of the cards is upside down, by pressing on its the user can temporarily show the front of the card. </br>
+  However, when she/he presses on the second card and the card aren't the same both of them are put upside-down once again. </br>
+  Of course, when the user guesses two cards correctly there are being removed from the rest. </br>
+ The goal of the game is to guess all the cards before time runs out. BE QUICK! </br>
+  
+  In this project I have used:
+  - timer to measure time (it is working even when user is scrolling)
+  - AVFoundation to play sounds
+  - CollectionView
+  - delegate and datasource for CollectionView
+  - CocoaTouch classes
+
+
+  ### Cards war game
+  demo: </br>
+  <img src="readme_files/guessing_demo.gif" alt="guessing_demo" width="892"/>  </br>
+  
+  game over: </br>
+  <img src="readme_files/guessing_game_over.gif" alt="guessing_game_over" width="892"/>  </br>
+  
+  demo: </br>
+  <img src="readme_files/guessing_game_won.gif" alt="guessing_game_won" width="892"/>  </br>
+</details>
