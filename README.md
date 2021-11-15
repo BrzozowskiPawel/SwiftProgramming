@@ -1,4 +1,4 @@
-# BasicSwiftApps - UNDER DEVELOPMENT 🏆
+# Swift Programming - UNDER DEVELOPMENT 🏆
 
 This repo will contain a wide range of different apps written with Swift on purpose to make me a better programmer. </br>
 The level of difficulty will increase with time. </br>
@@ -16,6 +16,8 @@ Take a look and ask my questions about it❕ </br>
 
 - [Cards war game](#improvements)
 
+
+# Swift foundations 👶
 
 ## Layout - first steps in creating a perfect layout for apps!
 <details>
