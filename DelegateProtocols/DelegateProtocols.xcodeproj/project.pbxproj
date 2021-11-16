@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0468D4162743E23900A5EE39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468D4152743E23900A5EE39 /* AppDelegate.swift */; };
 		0468D4182743E23900A5EE39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468D4172743E23900A5EE39 /* SceneDelegate.swift */; };
-		0468D41A2743E23900A5EE39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468D4192743E23900A5EE39 /* ViewController.swift */; };
 		0468D41D2743E23900A5EE39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0468D41B2743E23900A5EE39 /* Main.storyboard */; };
 		0468D41F2743E23900A5EE39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0468D41E2743E23900A5EE39 /* Assets.xcassets */; };
 		0468D4222743E23900A5EE39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0468D4202743E23900A5EE39 /* LaunchScreen.storyboard */; };
+		0468D42A2743E38600A5EE39 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468D4292743E38600A5EE39 /* FirstScreen.swift */; };
+		0468D42C2743E39B00A5EE39 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468D42B2743E39B00A5EE39 /* SecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0468D4122743E23900A5EE39 /* DelegateProtocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateProtocols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468D4152743E23900A5EE39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0468D4172743E23900A5EE39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0468D4192743E23900A5EE39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0468D41C2743E23900A5EE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0468D41E2743E23900A5EE39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0468D4212743E23900A5EE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0468D4232743E23900A5EE39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0468D4292743E38600A5EE39 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		0468D42B2743E39B00A5EE39 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				0468D4152743E23900A5EE39 /* AppDelegate.swift */,
 				0468D4172743E23900A5EE39 /* SceneDelegate.swift */,
-				0468D4192743E23900A5EE39 /* ViewController.swift */,
+				0468D4292743E38600A5EE39 /* FirstScreen.swift */,
 				0468D41B2743E23900A5EE39 /* Main.storyboard */,
 				0468D41E2743E23900A5EE39 /* Assets.xcassets */,
 				0468D4202743E23900A5EE39 /* LaunchScreen.storyboard */,
 				0468D4232743E23900A5EE39 /* Info.plist */,
+				0468D42B2743E39B00A5EE39 /* SecondScreen.swift */,
 			);
 			path = DelegateProtocols;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0468D41A2743E23900A5EE39 /* ViewController.swift in Sources */,
 				0468D4162743E23900A5EE39 /* AppDelegate.swift in Sources */,
+				0468D42C2743E39B00A5EE39 /* SecondScreen.swift in Sources */,
 				0468D4182743E23900A5EE39 /* SceneDelegate.swift in Sources */,
+				0468D42A2743E38600A5EE39 /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
