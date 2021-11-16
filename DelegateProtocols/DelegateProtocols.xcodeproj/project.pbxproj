@@ -61,11 +61,11 @@
 				0468D4152743E23900A5EE39 /* AppDelegate.swift */,
 				0468D4172743E23900A5EE39 /* SceneDelegate.swift */,
 				0468D4292743E38600A5EE39 /* FirstScreen.swift */,
+				0468D42B2743E39B00A5EE39 /* SecondScreen.swift */,
 				0468D41B2743E23900A5EE39 /* Main.storyboard */,
 				0468D41E2743E23900A5EE39 /* Assets.xcassets */,
 				0468D4202743E23900A5EE39 /* LaunchScreen.storyboard */,
 				0468D4232743E23900A5EE39 /* Info.plist */,
-				0468D42B2743E39B00A5EE39 /* SecondScreen.swift */,
 			);
 			path = DelegateProtocols;
 			sourceTree = "<group>";

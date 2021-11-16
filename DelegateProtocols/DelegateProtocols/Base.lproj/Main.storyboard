@@ -44,6 +44,9 @@
                                 <state key="normal" title="Choose a Side">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.74510893489999996" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseButtonTapped:" destination="fll-mo-GkS" eventType="touchUpInside" id="j8f-07-v5c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xq4-Ih-ZaB"/>
@@ -59,6 +62,11 @@
                             <constraint firstItem="b96-fR-DyA" firstAttribute="leading" secondItem="Xq4-Ih-ZaB" secondAttribute="leading" constant="25" id="uCi-a6-LM3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="JPV-Kb-LiY" id="2sl-eV-zjx"/>
+                        <outlet property="mainImageView" destination="b96-fR-DyA" id="T14-el-6oM"/>
+                        <outlet property="nameLabel" destination="J8l-iF-D6N" id="rQo-nl-DZo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcu-gL-a6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +75,7 @@
         <!--Second Screen-->
         <scene sceneID="Lhw-ZC-u9U">
             <objects>
-                <viewController id="1hU-a2-zFJ" customClass="SecondScreen" customModule="DelegateProtocols" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondScreen" id="1hU-a2-zFJ" customClass="SecondScreen" customModule="DelegateProtocols" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aJp-dk-k2k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +101,9 @@
                                     <constraint firstAttribute="height" constant="150" id="phG-pb-JZR"/>
                                 </constraints>
                                 <state key="normal" image="imperial"/>
+                                <connections>
+                                    <action selector="whiteVuttonTapped:" destination="1hU-a2-zFJ" eventType="touchUpInside" id="eC2-gC-OfJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-Ag-xlt" userLabel="redButton">
                                 <rect key="frame" x="132" y="488.5" width="150" height="150"/>
@@ -103,6 +114,9 @@
                                     <constraint firstAttribute="width" constant="150" id="sDj-Qw-lZd"/>
                                 </constraints>
                                 <state key="normal" image="rebel"/>
+                                <connections>
+                                    <action selector="redButtonTapped:" destination="1hU-a2-zFJ" eventType="touchUpInside" id="gkF-06-yud"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="49X-cG-erv"/>
