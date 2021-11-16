@@ -88,11 +88,14 @@ Take a look and ask my questions about it❕ </br>
 ## Star Wars Delegate-Protocol - app to show how delegate-protocol works!
 <details>
   <summary>Click to expand details!</summary>
-  This app is based on [tutorial](https://codewithchris.com/) which helped me to understand how delegating in Swift works. </br>
+  This app is based on turoial* which helped me to understand how delegating in Swift works. </br>
   Delegate - Protocol is similar to master - slave. </br>
   FirstScreen (just showing something) is slave and SecondScreen(know information from user and send it to first screen) is master. </br>
   Base on the picked side (in SecondScreen) we are showing specific data back on the FirstScreen. </br>
-  In the and we can use the function in the FirstScreen when arguments to it come from this function being called in SecondScreen. </br>
+  In the and we can use the function in the FirstScreen when arguments to it come from this function being called in SecondScreen. </br> </br>
+  
+  [*link to the tutorial](https://youtu.be/DBWu6TnhLeY)
+  
   ### Demo:
  
  <img src="readme_files/Delegate.gif" alt="Delegate" width="340"/>  </br>
