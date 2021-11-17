@@ -18,11 +18,44 @@ class QuizModel {
     // Something will be set as delegate of this class
     var delegate:QuizProtocol?
     
-    // This will be done in background
     func getQuestions() {
-        // TODO: Fetch the questions
+        // Fetch the questions
+        getLocalJsonFile()
         
-        // Notify the delegate of the retrived questions
-        delegate?.questionsRetrieved([Question]())
+        
+    }
+    
+    func getLocalJsonFile() {
+        // Get budle path to JSON file
+        let path = Bundle.main.path(forResource: "QuestionData", ofType: "json")
+        
+        // Double check that path isn't nil
+        guard path != nil else {
+            print("Couldnt find the JSON data file")
+            return
+        }
+        
+        // Create URL object from the path
+        let url = URL(fileURLWithPath: path!)
+        
+        // Get data from URL
+        do {
+            let data = try Data(contentsOf: url)
+            
+            // Decoding a data into a object
+            let decoder = JSONDecoder()
+            // [Question].self -> this will gives us a type of object
+            let array = try decoder.decode([Question].self, from: data)
+            
+            // Notify delegate
+            delegate?.questionsRetrieved(array)
+        } catch {
+            print("Couldnt read the data from ulr \(url)")
+        }
+        
+    }
+    
+    func getRemoteJsonFile() {
+        
     }
 }

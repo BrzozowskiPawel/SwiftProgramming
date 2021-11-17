@@ -15,6 +15,7 @@
 		040A86442742F78100279AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040A86422742F78100279AC5 /* LaunchScreen.storyboard */; };
 		040A864C2742F7A800279AC5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A864B2742F7A800279AC5 /* Question.swift */; };
 		040A864E2742F81D00279AC5 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A864D2742F81D00279AC5 /* QuizModel.swift */; };
+		040DB7E7274451BA00006868 /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 040DB7E6274451BA00006868 /* QuestionData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		040A86452742F78100279AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040A864B2742F7A800279AC5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		040A864D2742F81D00279AC5 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		040DB7E6274451BA00006868 /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				040A863B2742F78000279AC5 /* ViewController.swift */,
 				040A864B2742F7A800279AC5 /* Question.swift */,
 				040A864D2742F81D00279AC5 /* QuizModel.swift */,
+				040DB7E6274451BA00006868 /* QuestionData.json */,
 				040A863D2742F78000279AC5 /* Main.storyboard */,
 				040A86402742F78100279AC5 /* Assets.xcassets */,
 				040A86422742F78100279AC5 /* LaunchScreen.storyboard */,
@@ -134,6 +137,7 @@
 				040A86442742F78100279AC5 /* LaunchScreen.storyboard in Resources */,
 				040A86412742F78100279AC5 /* Assets.xcassets in Resources */,
 				040A863F2742F78000279AC5 /* Main.storyboard in Resources */,
+				040DB7E7274451BA00006868 /* QuestionData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
