@@ -27,6 +27,7 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     var model = QuizModel()
     var questions = [Question]()
     var currentQuestionIndex = 0
+    var numCorrect = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +42,25 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         
         model.getQuestions()
     }
-    
+    func displayQuestion() {
+        // Chech if there are questions and chech that currentQuestion is not out of bounds
+        
+        guard questions.count > 0 && currentQuestionIndex < questions.count else {
+            return
+        }
+        
+        // Display the question text
+        questionLabel.text = questions[currentQuestionIndex].question
+    }
     // MARK: - QuizProtocool Methods
     
     func questionsRetrieved(_ questions: [Question]) {
         print("Questions retrieved from model!")
         // Get a reference to the questions
         self.questions = questions
+        
+        // Dispaly first question
+        displayQuestion()
         
         // Reload the tableView
         tableView.reloadData()
@@ -79,7 +92,13 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         // Customize cell - it return UIelement? we need to cast it inot UILabel
         let label = cell.viewWithTag(1) as? UILabel
         if label != nil {
-            // TODO: Set the answet text for label
+            let question = questions[currentQuestionIndex]
+            
+            if question.answers != nil && indexPath.row < question.answers!.count{
+                // Set the answet text for label
+                label?.text = question.answers![indexPath.row]
+            }
+            
         }
         // Return the cell
         return cell
