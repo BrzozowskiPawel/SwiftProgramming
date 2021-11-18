@@ -16,6 +16,8 @@
 		040A864C2742F7A800279AC5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A864B2742F7A800279AC5 /* Question.swift */; };
 		040A864E2742F81D00279AC5 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A864D2742F81D00279AC5 /* QuizModel.swift */; };
 		040DB7E7274451BA00006868 /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 040DB7E6274451BA00006868 /* QuestionData.json */; };
+		0459FE9F27469026005D61D6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459FE9E27469026005D61D6 /* ResultViewController.swift */; };
+		04D5CF1A2746CD7E00C72E82 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5CF192746CD7E00C72E82 /* StateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		040A864B2742F7A800279AC5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		040A864D2742F81D00279AC5 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		040DB7E6274451BA00006868 /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
+		0459FE9E27469026005D61D6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		04D5CF192746CD7E00C72E82 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				040A863B2742F78000279AC5 /* ViewController.swift */,
 				040A864B2742F7A800279AC5 /* Question.swift */,
 				040A864D2742F81D00279AC5 /* QuizModel.swift */,
+				0459FE9E27469026005D61D6 /* ResultViewController.swift */,
+				04D5CF192746CD7E00C72E82 /* StateManager.swift */,
 				040DB7E6274451BA00006868 /* QuestionData.json */,
 				040A863D2742F78000279AC5 /* Main.storyboard */,
 				040A86402742F78100279AC5 /* Assets.xcassets */,
@@ -151,8 +157,10 @@
 				040A863C2742F78000279AC5 /* ViewController.swift in Sources */,
 				040A864C2742F7A800279AC5 /* Question.swift in Sources */,
 				040A86382742F78000279AC5 /* AppDelegate.swift in Sources */,
+				04D5CF1A2746CD7E00C72E82 /* StateManager.swift in Sources */,
 				040A863A2742F78000279AC5 /* SceneDelegate.swift in Sources */,
 				040A864E2742F81D00279AC5 /* QuizModel.swift in Sources */,
+				0459FE9F27469026005D61D6 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@
 import UIKit
 
 // Adding QuizProtocol to this class, coz delagte requiares it
-class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITableViewDataSource, ResaultViewControllerProtocol {
     
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -29,9 +29,16 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     var currentQuestionIndex = 0
     var numCorrect = 0
     
+    var resaultDialog: ResultViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Initialzie the result dialog from the Storyboard blueprints
+        resaultDialog = storyboard?.instantiateViewController(withIdentifier: "ResultVC") as? ResultViewController
+        resaultDialog?.modalPresentationStyle = .overCurrentContext
+        resaultDialog?.delegate = self
         
         // Set self as the delgate and datasource for the tableView
         tableView.delegate = self
@@ -65,6 +72,22 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         print("Questions retrieved from model!")
         // Get a reference to the questions
         self.questions = questions
+        
+        // Check if we should restore the state before showing question 1
+        let savedIndex = StateManager.retrieveValue(key: StateManager.questionIndexKey) as? Int
+        
+        if savedIndex != nil && savedIndex! < self.questions.count {
+            // Set the current question to saved index
+            currentQuestionIndex = savedIndex!
+            
+            // Retriev number od correct from storage
+            let savedNumCorrect = StateManager.retrieveValue(key: StateManager.numCorrectKey) as? Int
+            
+            if savedNumCorrect != nil {
+                numCorrect = savedNumCorrect!
+            }
+            print("Question index should be loaded from UserDefaults: savedIndex \(savedIndex!), savedNumCorrect: \(savedNumCorrect!)")
+        }
         
         // Dispaly first question
         displayQuestion()
@@ -110,22 +133,70 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // User has tapped on row, chech if its the right answer
         
-         let question = questions[currentQuestionIndex]
+        var titleText = ""
+        let question = questions[currentQuestionIndex]
         
         if question.correctAnswerIndex ==  indexPath.row{
             // user got it right
+            titleText = "Correct 🏆"
+            numCorrect += 1
             print("User got it right 😁")
         } else {
             // user hot it wrong
+            titleText = "Wrong 😵‍💫"
             print("User got it wrong 😿")
         }
-        
+        // Show the popup
+        if resaultDialog != nil{
+            
+            // Customize the dialog text
+            resaultDialog!.titleText = titleText
+            resaultDialog!.feedbacktext = question.feedback!
+            resaultDialog!.buttonText = "Next"
+            
+            present(resaultDialog!, animated: true, completion: nil)
+        }
+    }
+    
+    // MARK: - ResultViewControllerProtocol Methods
+    
+    func dialogDismissed() {
         // Increment currentQuestionIndex
         currentQuestionIndex += 1
         
-        // Dipslay next question
-        displayQuestion()
+        if currentQuestionIndex == questions.count {
+            // User has just answered the las question
+            // SHow a summary dialog
+            
+            // Show the popup
+            if resaultDialog != nil{
+                
+                // Customize the dialog text
+                resaultDialog!.titleText = "Summary 👀"
+                resaultDialog!.feedbacktext = "You got \(numCorrect) correct out of \(questions.count) questions"
+                resaultDialog!.buttonText = "Restart"
+                
+                present(resaultDialog!, animated: true, completion: nil)
+                
+                StateManager.clearState()
+            }
+        }
+        else if currentQuestionIndex > questions.count {
+            // Restart
+            numCorrect = 0
+            currentQuestionIndex = 0
+            displayQuestion()
+        }
+        else if currentQuestionIndex < questions.count {
+            // We have more question to show
+            
+            //Dipslay next question
+            displayQuestion()
+            
+            // Save state
+            StateManager.saveState(numCorrect: numCorrect, questionIndex: currentQuestionIndex)
+            print("contex saved")
+        }
     }
-    
 }
 
