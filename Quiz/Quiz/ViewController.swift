@@ -37,6 +37,10 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         tableView.delegate = self
         tableView.dataSource = self
         
+        // TableViw row sizes:
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
+        
         // Seting model (QuizModel) delegate as this class.
         model.delegate = self
         
@@ -51,6 +55,9 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         
         // Display the question text
         questionLabel.text = questions[currentQuestionIndex].question
+        
+        // Reload the tableView
+        tableView.reloadData() 
     }
     // MARK: - QuizProtocool Methods
     
@@ -61,9 +68,6 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         
         // Dispaly first question
         displayQuestion()
-        
-        // Reload the tableView
-        tableView.reloadData()
     }
     
     // MARK: - UITableView methods
@@ -103,7 +107,25 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         // Return the cell
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // User has tapped on row, chech if its the right answer
+        
+         let question = questions[currentQuestionIndex]
+        
+        if question.correctAnswerIndex ==  indexPath.row{
+            // user got it right
+            print("User got it right 😁")
+        } else {
+            // user hot it wrong
+            print("User got it wrong 😿")
+        }
+        
+        // Increment currentQuestionIndex
+        currentQuestionIndex += 1
+        
+        // Dipslay next question
+        displayQuestion()
+    }
     
 }
 
