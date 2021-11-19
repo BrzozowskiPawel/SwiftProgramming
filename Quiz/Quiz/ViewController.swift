@@ -23,6 +23,8 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     // We need to add: UITableViewDelegate and UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var stackViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackViewTrailingConstraint: NSLayoutConstraint!
     
     var model = QuizModel()
     var questions = [Question]()
@@ -53,6 +55,8 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         
         model.getQuestions()
     }
+    
+    
     func displayQuestion() {
         // Chech if there are questions and chech that currentQuestion is not out of bounds
         
@@ -146,6 +150,7 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
             titleText = "Wrong 😵‍💫"
             print("User got it wrong 😿")
         }
+        
         // Show the popup
         if resaultDialog != nil{
             
