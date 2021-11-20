@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
     var model = ArticleModel()
+    var articles = [Article]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,6 @@ extension ViewController: ArticleModelProtocol {
     // MARK: - Article Model Protocool/ Delgate Methods
     
     func articlesRetrieved(_ articles: [Article]) {
-        print("articles returned from model")
+        self.articles = articles 
     }
 }
