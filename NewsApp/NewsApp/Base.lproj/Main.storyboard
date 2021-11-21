@@ -54,7 +54,6 @@
                                         <connections>
                                             <outlet property="articleImageView" destination="OTB-Oq-sPp" id="87k-cj-lVy"/>
                                             <outlet property="headlineLabel" destination="10g-KD-8LZ" id="TkK-jk-q2a"/>
-                                            <segue destination="TWf-90-Da4" kind="show" id="rHD-v8-72X"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,6 +71,7 @@
                     <navigationItem key="navigationItem" id="7ee-Hi-Muu"/>
                     <connections>
                         <outlet property="tableView" destination="d9s-pu-s3U" id="Xyi-Sm-4Ih"/>
+                        <segue destination="TWf-90-Da4" kind="show" identifier="goToDetail" id="LBT-6l-MhM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,24 +94,30 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-g7-c0P">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fNX-aL-XEF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6z0-g7-c0P" firstAttribute="centerX" secondItem="38Q-cN-k48" secondAttribute="centerX" id="8ib-4u-7OO"/>
                             <constraint firstItem="U7w-Qd-9n9" firstAttribute="leading" secondItem="38Q-cN-k48" secondAttribute="leading" id="DGW-WP-g8a"/>
                             <constraint firstAttribute="bottom" secondItem="U7w-Qd-9n9" secondAttribute="bottom" id="LLw-ff-K1F"/>
                             <constraint firstItem="U7w-Qd-9n9" firstAttribute="top" secondItem="38Q-cN-k48" secondAttribute="top" id="dzZ-oC-VMh"/>
+                            <constraint firstItem="6z0-g7-c0P" firstAttribute="centerY" secondItem="38Q-cN-k48" secondAttribute="centerY" id="xK3-Hf-rGB"/>
                             <constraint firstAttribute="trailing" secondItem="U7w-Qd-9n9" secondAttribute="trailing" id="ze2-59-rCx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5zW-n6-SRR"/>
                     <connections>
+                        <outlet property="spinner" destination="6z0-g7-c0P" id="Wkw-uY-jMF"/>
                         <outlet property="webView" destination="U7w-Qd-9n9" id="vvU-wb-vie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sD3-UL-S0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="108"/>
+            <point key="canvasLocation" x="1902.8985507246377" y="107.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dWn-c6-g4M">

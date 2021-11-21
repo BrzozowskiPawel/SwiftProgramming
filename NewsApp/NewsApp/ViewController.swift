@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             return
         }
         
+        
         // Get article that have been tapped on
         let article = articles[indexPath!.row]
         
@@ -68,7 +69,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("SOMETHING")
+        // User has just selected row, trigger the segue (sender is self coz its triggered by this VC)
+        performSegue(withIdentifier: "goToDetail", sender: self)
     }
     
 }

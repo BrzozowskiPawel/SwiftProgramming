@@ -20,13 +20,21 @@ class ArticleCell: UITableViewCell {
         // Clean up the cell before displaing next article! VERY IMPORTAN
         // We have to rmember that cells are reusable
         articleImageView.image = nil
+        articleImageView.alpha = 0
         headlineLabel.text = ""
+        headlineLabel.alpha = 0
         
         // Keep a refrence to the article
         articleToDisplay =  article
         
         // Set the head line
         headlineLabel.text = articleToDisplay!.title
+        
+        
+        // Animate the label into view
+        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+            self.headlineLabel.alpha = 1
+        }, completion: nil)
         
         // Download and displaythe image
         
@@ -42,6 +50,11 @@ class ArticleCell: UITableViewCell {
         if let imageData = CacheManager.retrieveData(urlString){
             // There is image data, set the imageview and return
             articleImageView.image = UIImage(data: imageData)
+            
+            UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+                self.articleImageView.alpha =  1
+            }, completion: nil)
+            
             return
         }
         
@@ -69,6 +82,10 @@ class ArticleCell: UITableViewCell {
                     DispatchQueue.main.async {
                         // Display the image data in the image view
                         self.articleImageView.image =  UIImage(data: data!)
+                        
+                        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+                            self.articleImageView.alpha =  1
+                        }, completion: nil)
                     }
                 }
             }
