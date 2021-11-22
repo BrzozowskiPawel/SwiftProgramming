@@ -9,13 +9,20 @@ Take a look and ask my questions about it❕ </br>
 
 ## Table of Contents
 - [Layout](#layout)
-- [Card Wars](#card-wars)
-- [Picture Guesser](#picture-guesser)
-- [Cards war game](#improvements)
-- [Star Wars Delegate-Protocol](#star-wars-delegate-protocol)
-- [Quiz App](#quiz-app)
-- [News app](#news-app)
 - 
+- [Card Wars](#card-wars)
+- 
+- [Picture Guesser](#picture-guesser)
+- 
+- [Cards war game](#improvements)
+- 
+- [Star Wars Delegate-Protocol](#star-wars-delegate-protocol)
+- 
+- [Quiz App](#quiz-app)
+- 
+- [News app](#news-app)
+
+
 # Swift foundations 👶
 
 ## Layout - first steps in creating a perfect layout for apps!
