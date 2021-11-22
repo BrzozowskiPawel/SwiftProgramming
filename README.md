@@ -101,3 +101,36 @@ Take a look and ask my questions about it❕ </br>
  <img src="readme_files/Delegate.gif" alt="Delegate" width="340"/>  </br>
   
 </details>
+
+## Quiz app - parsing JSON into a quiz!
+<details>
+  <summary>Click to expand details!</summary>
+  Quiz app that uses JSON to create the whole quiz. </br>
+  The user has to click on the right answer and then the user's choice is being checked. </br>
+  If it's the right answer user gets a point and if he/she is wrong there's no point. </br>
+  After all question popup window with a score and restart button is being shown. </br>
+  If users close this app, the state of the game is being saved and loaded using UserDefaults. </br> </br>
+  
+  What I ahve learned and applied in this app:
+  - delegate / protocol patern
+  - JSON decoding and parsing
+  - Networking / API using to dowload JSON
+  - TableView
+  - UserDefaults
+  - basic animations
+  
+  Please take a look at app and all its functionality: </br>
+  
+  ### Demo:
+ 
+ <img src="readme_files/Quiz_game.gif" alt="quiz game" width="386"/>  </br>
+ 
+ ### Saving context:
+ 
+ <img src="readme_files/Quiz_saving_context.gif" alt="quiz saving" width="386"/>  </br>
+ 
+ ### End of game:
+ 
+ <img src="readme_files/Quiz_gameover.gif" alt="quiz end of game" width="386"/>  </br>
+  
+</details>
