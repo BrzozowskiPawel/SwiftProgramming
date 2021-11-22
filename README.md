@@ -114,7 +114,7 @@ Take a look and ask my questions about it❕ </br>
   What I ahve learned and applied in this app:
   - delegate / protocol patern
   - JSON decoding and parsing
-  - Networking / API using to dowload JSON
+  - Networking used to dowload JSON
   - TableView
   - UserDefaults
   - basic animations
@@ -135,4 +135,30 @@ Take a look and ask my questions about it❕ </br>
   
 </details>
 
+## News app - using API to dowload news!
+<details>
+  <summary>Click to expand details!</summary>
+  News app is an app that help user to find best news. /Br>  
+  In this app I am using [news API](https://newsapi.org/) to fetch most important news for US (this could be changed).  </br> 
+  The main screen of the app is just a TableView with title and photo (if exists) of every article. </br>
+  The user can click on each article to open its full version via WebView. </br> </br>
+  
+  What I ahve learned and applied in this app:
+  - using API to dowload and data
+  - performing segues and using NavigationController
+  - using WebView
+  - using activity indicator
+  
+  Please take a look at app and all its functionality: </br>
+  
+  ### Demo:
+ 
+ <img src="readme_files/News_app.gif" alt="News App" width="386"/>  </br>
+ 
+ ### Details:
+ 
+ <img src="readme_files/News_details.gif" alt="news details" width="386"/>  </br>
+ 
+  
+</details>
 # PLEASE KEEP IN MIND THAT THIS REPO IS STILL UNDER DEVELOPMENT
