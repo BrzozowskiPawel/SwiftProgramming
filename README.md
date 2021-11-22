@@ -144,7 +144,7 @@ Take a look and ask my questions about it❕ </br>
   The user can click on each article to open its full version via WebView. </br> </br>
   
   What I ahve learned and applied in this app:
-  - using API to dowload and data
+  - using API to download and data
   - performing segues and using NavigationController
   - using WebView
   - using activity indicator
@@ -161,4 +161,6 @@ Take a look and ask my questions about it❕ </br>
  
   
 </details>
+
+</br> </br> </br>
 # PLEASE KEEP IN MIND THAT THIS REPO IS STILL UNDER DEVELOPMENT
