@@ -143,8 +143,8 @@ Take a look and ask my questions about it❕ </br>
 ## News app - using API to dowload news!
 <details>
   <summary>Click to expand details!</summary>
-  News app is an app that help user to find best news. /Br>  
-  In this app I am using [news API](https://newsapi.org/) to fetch most important news for US (this could be changed).  </br> 
+  News app is an app that help user to find best news. </br>  
+  In this app I am using news API to fetch most important news for US (this could be changed).  </br> 
   The main screen of the app is just a TableView with title and photo (if exists) of every article. </br>
   The user can click on each article to open its full version via WebView. </br> </br>
   
@@ -153,6 +153,8 @@ Take a look and ask my questions about it❕ </br>
   - performing segues and using NavigationController
   - using WebView
   - using activity indicator
+  
+  [news API link](https://newsapi.org/) </br>
   
   Please take a look at app and all its functionality: </br>
   
