@@ -167,7 +167,9 @@ Take a look and ask my questions about it❕ </br>
  <img src="readme_files/News_details.gif" alt="news details" width="386"/>  </br>
  
   
-</details>
+</details> </br>
+
+# Databases 💾
 
 </br> </br> 
 # PLEASE KEEP IN MIND THAT THIS REPO IS STILL UNDER DEVELOPMENT
