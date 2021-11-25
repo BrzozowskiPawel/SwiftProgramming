@@ -15,7 +15,7 @@
 		04B17209274FB2BD00141E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B17207274FB2BD00141E6B /* LaunchScreen.storyboard */; };
 		04B17211274FB4B000141E6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B17210274FB4B000141E6B /* GoogleService-Info.plist */; };
 		04B17213274FB7E600141E6B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B17212274FB7E600141E6B /* Note.swift */; };
-		04B17215274FB8B400141E6B /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B17214274FB8B400141E6B /* NoteModel.swift */; };
+		04B17215274FB8B400141E6B /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B17214274FB8B400141E6B /* NotesModel.swift */; };
 		04B17217274FB8FB00141E6B /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B17216274FB8FB00141E6B /* NoteViewController.swift */; };
 		709C6B07DBA7C99AE8DB569C /* Pods_JournalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5BB589EDD145AE267E77CB /* Pods_JournalApp.framework */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		04B1720A274FB2BD00141E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B17210274FB4B000141E6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04B17212274FB7E600141E6B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		04B17214274FB8B400141E6B /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		04B17214274FB8B400141E6B /* NotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModel.swift; sourceTree = "<group>"; };
 		04B17216274FB8FB00141E6B /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		CB5BB589EDD145AE267E77CB /* Pods_JournalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JournalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97224D63A6CA6F4A8194148 /* Pods-JournalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JournalApp.debug.xcconfig"; path = "Target Support Files/Pods-JournalApp/Pods-JournalApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				04B1720A274FB2BD00141E6B /* Info.plist */,
 				04B17210274FB4B000141E6B /* GoogleService-Info.plist */,
 				04B17212274FB7E600141E6B /* Note.swift */,
-				04B17214274FB8B400141E6B /* NoteModel.swift */,
+				04B17214274FB8B400141E6B /* NotesModel.swift */,
 				04B17216274FB8FB00141E6B /* NoteViewController.swift */,
 			);
 			path = JournalApp;
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B17215274FB8B400141E6B /* NoteModel.swift in Sources */,
+				04B17215274FB8B400141E6B /* NotesModel.swift in Sources */,
 				04B17201274FB2BC00141E6B /* ViewController.swift in Sources */,
 				04B171FD274FB2BC00141E6B /* AppDelegate.swift in Sources */,
 				04B171FF274FB2BC00141E6B /* SceneDelegate.swift in Sources */,

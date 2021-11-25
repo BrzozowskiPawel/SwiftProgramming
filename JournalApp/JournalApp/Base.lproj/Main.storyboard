@@ -19,24 +19,25 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JS7-qK-c9l">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoteCell" id="A7o-oQ-kNX">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="91.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A7o-oQ-kNX" id="7Tx-Nf-dzY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dng-Rj-naU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
+                                                    <rect key="frame" x="10" y="20" width="394" height="51.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-yf-nJn">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-yf-nJn">
                                                             <rect key="frame" x="0.0" y="0.0" width="44.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-Hd-tT6">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-Hd-tT6">
                                                             <rect key="frame" x="0.0" y="30.5" width="41.5" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -46,10 +47,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dng-Rj-naU" firstAttribute="top" secondItem="7Tx-Nf-dzY" secondAttribute="top" id="R3Z-1h-DMZ"/>
-                                                <constraint firstItem="dng-Rj-naU" firstAttribute="leading" secondItem="7Tx-Nf-dzY" secondAttribute="leading" id="hRL-jZ-M5Q"/>
-                                                <constraint firstAttribute="trailing" secondItem="dng-Rj-naU" secondAttribute="trailing" id="keg-wB-Y1G"/>
-                                                <constraint firstAttribute="bottom" secondItem="dng-Rj-naU" secondAttribute="bottom" id="tuX-HE-WuH"/>
+                                                <constraint firstItem="dng-Rj-naU" firstAttribute="top" secondItem="7Tx-Nf-dzY" secondAttribute="top" constant="20" id="R3Z-1h-DMZ"/>
+                                                <constraint firstItem="dng-Rj-naU" firstAttribute="leading" secondItem="7Tx-Nf-dzY" secondAttribute="leading" constant="10" id="hRL-jZ-M5Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="dng-Rj-naU" secondAttribute="trailing" constant="10" id="keg-wB-Y1G"/>
+                                                <constraint firstAttribute="bottom" secondItem="dng-Rj-naU" secondAttribute="bottom" constant="20" id="tuX-HE-WuH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
