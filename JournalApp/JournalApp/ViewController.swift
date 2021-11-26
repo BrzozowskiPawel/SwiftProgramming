@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         notesModel.getNotes()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Getting reference to the destination and set up its properties
+        let notesViewController = segue.destination as! NoteViewController
+        
+        if tableView.indexPathForSelectedRow != nil {
+            notesViewController.note = notes[tableView.indexPathForSelectedRow!.row]
+        }
+        
+        notesViewController.notesModel = self.notesModel
+    }
 
 }
 

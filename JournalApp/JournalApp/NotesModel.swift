@@ -45,4 +45,28 @@ class NotesModel {
             }
         }
     }
+    
+    func deleteNote(currentNote:Note) {
+        let db = Firestore.firestore()
+        
+        db.collection("notes").document(currentNote.docId).delete()
+    }
+    
+    func saveNote(currentNote:Note) {
+        let db = Firestore.firestore()
+        
+        db.collection("notes").document(currentNote.docId).setData(noteToDict(currentNote: currentNote))
+    }
+    
+    func noteToDict(currentNote:Note) -> [String:Any] {
+        var dict = [String:Any]()
+        dict["docId"] = currentNote.docId
+        dict["title"] = currentNote.title
+        dict["body"] = currentNote.body
+        dict["isStarted"] = currentNote.isStarted
+        dict["createdAt"] = currentNote.createdAt
+        dict["lastUpdatedAt"] = currentNote.lastUpdated
+        
+        return dict
+    }
 }
