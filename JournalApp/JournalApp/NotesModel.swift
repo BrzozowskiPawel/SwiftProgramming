@@ -40,7 +40,7 @@ class NotesModel {
                     let createdAtDate: Date = Timestamp.dateValue(doc["createdAt"] as! Timestamp)()
                     let lastUpdatedAtDate: Date = Timestamp.dateValue(doc["lastUpdatedAt"] as! Timestamp)()
                     
-                    let single_note = Note(docId: doc["docId"] as! String, title: doc["title"] as! String, body: doc["body"] as! String, isStarted: doc["isStarted"] as! Bool, createdAt: createdAtDate, lastUpdated: lastUpdatedAtDate)
+                    let single_note = Note(docId: doc["docId"] as! String, title: doc["title"] as! String, body: doc["body"] as! String, isStarred: doc["isStarred"] as? Bool ?? false, createdAt: createdAtDate, lastUpdated: lastUpdatedAtDate)
                     
                     notes.append(single_note)
                 }
@@ -71,10 +71,15 @@ class NotesModel {
         dict["docId"] = currentNote.docId
         dict["title"] = currentNote.title
         dict["body"] = currentNote.body
-        dict["isStarted"] = currentNote.isStarted
+        dict["isStarred"] = currentNote.isStarred
         dict["createdAt"] = currentNote.createdAt
         dict["lastUpdatedAt"] = currentNote.lastUpdated
         
         return dict
+    }
+    
+    func updateIsStarred(_ noteId: String, isStarred: Bool) {
+        let db = Firestore.firestore()
+        db.collection("notes").document(noteId).updateData(["isStarred":isStarred])
     }
 }

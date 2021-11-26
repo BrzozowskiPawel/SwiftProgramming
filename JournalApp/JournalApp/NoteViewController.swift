@@ -11,6 +11,7 @@ class NoteViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodytextView: UITextView!
+    @IBOutlet weak var starButton: UIButton!
     
     var note:Note?
     var notesModel:NotesModel?
@@ -22,9 +23,25 @@ class NoteViewController: UIViewController {
         if note != nil {
             titleTextField.text = note?.title
             bodytextView.text = note?.body
+            
+            switchStar()
+        } else {
+            //brand new note
+            let newNote = Note(docId: UUID().uuidString, title: titleTextField.text ?? "", body: bodytextView.text ?? "", isStarred: false, createdAt: Date(), lastUpdated: Date())
+            self.note = newNote
+            notesModel?.saveNote(currentNote: note!)
+            switchStar()
         }
     }
     
+    func switchStar() {
+        if note?.isStarred == true {
+            starButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        }
+        if note?.isStarred != true{
+            starButton.setImage(UIImage(systemName: "star"), for: .normal)
+        }
+    }
     override func viewWillDisappear(_ animated: Bool) {
         // Clear out the texview
         self.note = nil
@@ -40,15 +57,9 @@ class NoteViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: UIButton) {
-        if note == nil {
-            //brand new note
-            let newNote = Note(docId: UUID().uuidString, title: titleTextField.text ?? "No title", body: bodytextView.text ?? "No data", isStarted: false, createdAt: Date(), lastUpdated: Date())
-            self.note = newNote
-            notesModel?.saveNote(currentNote: note!)
-        }
-        else if note != nil {
-            self.note?.title = titleTextField.text ?? "No title"
-            self.note?.body = bodytextView.text ?? "No data"
+        if note != nil {
+            self.note?.title = titleTextField.text ?? ""
+            self.note?.body = bodytextView.text ?? ""
             self.note?.lastUpdated = Date()
             
             // Send it to the model
@@ -57,5 +68,19 @@ class NoteViewController: UIViewController {
         dismiss(animated: true, completion: nil)
 
     }
+    
+    @IBAction func starButtonPressed(_ sender: UIButton) {
+        // Change the property of note
+        note?.isStarred.toggle()
+        
+        // update databse
+        if self.note != nil {
+            notesModel?.updateIsStarred(self.note!.docId, isStarred: self.note!.isStarred)
+        }
+        
+        // upadte start button
+        switchStar()
+    }
+    
     
 }

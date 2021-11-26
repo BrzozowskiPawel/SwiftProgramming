@@ -11,7 +11,7 @@ struct Note {
     var docId: String
     var title: String
     var body: String
-    var isStarted: Bool
+    var isStarred: Bool
     var createdAt: Date
     var lastUpdated: Date
 }

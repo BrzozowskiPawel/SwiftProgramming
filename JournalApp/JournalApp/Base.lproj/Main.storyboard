@@ -115,15 +115,17 @@
                                         <rect key="frame" x="0.0" y="677" width="374" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywi-sx-zqn">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="deleteTapped:" destination="uqa-eS-Tsm" eventType="touchUpInside" id="OnX-dm-8EE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTb-bB-O9s">
-                                                <rect key="frame" x="202" y="0.0" width="172" height="31"/>
+                                                <rect key="frame" x="125" y="0.0" width="172" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Save">
                                                     <backgroundConfiguration key="background">
@@ -133,6 +135,16 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="saveTapped:" destination="uqa-eS-Tsm" eventType="touchUpInside" id="L7l-Z4-CWH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebQ-nk-NNN">
+                                                <rect key="frame" x="327" y="0.0" width="47" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="starButtonPressed:" destination="uqa-eS-Tsm" eventType="touchUpInside" id="TOl-TN-w8Z"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -152,6 +164,7 @@
                     <navigationItem key="navigationItem" id="Mbv-R2-o8k"/>
                     <connections>
                         <outlet property="bodytextView" destination="Ckn-tl-snF" id="Zlh-bb-4fa"/>
+                        <outlet property="starButton" destination="ebQ-nk-NNN" id="3Ub-ZK-nPn"/>
                         <outlet property="titleTextField" destination="DlG-ND-8GA" id="2o1-Ad-TCK"/>
                     </connections>
                 </viewController>
@@ -183,6 +196,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -194,6 +208,12 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
