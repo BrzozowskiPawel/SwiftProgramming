@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var isStarButtonPressed = false
+    @IBOutlet weak var starButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     private var notesModel = NotesModel()
@@ -24,10 +26,18 @@ class ViewController: UIViewController {
         // set self as delgate for notes model
         notesModel.delegate = self
         
-        // retive all notes
-        notesModel.getNotes()
+        // Set the sarButton status
+        setStarFilterButton()
+        
+        // retive all notes acording to starButton
+        isStarButtonPressed ? notesModel.getNotes(true) : notesModel.getNotes()
     }
 
+    func setStarFilterButton(){
+        let imageName = isStarButtonPressed ? "star.fill" : "star"
+        starButton.image = UIImage(systemName: imageName)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Getting reference to the destination and set up its properties
         let notesViewController = segue.destination as! NoteViewController
@@ -41,7 +51,18 @@ class ViewController: UIViewController {
         
         notesViewController.notesModel = self.notesModel
     }
-
+    
+    @IBAction func starTapped(_ sender: UIBarButtonItem) {
+        // togle the star filter status
+        isStarButtonPressed.toggle()
+        
+        // run query
+        isStarButtonPressed ? notesModel.getNotes(true) : notesModel.getNotes()
+        
+        // udpate button
+        setStarFilterButton()
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -63,6 +84,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    
+    
+    
     
 }
 

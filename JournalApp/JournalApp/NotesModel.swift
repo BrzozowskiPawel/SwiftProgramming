@@ -23,13 +23,22 @@ class NotesModel {
     }
     
     // Return the notes
-    func getNotes() {
+    func getNotes(_ starredOnly:Bool = false) {
+        
+        // detach any listener
+        listener?.remove()
+        
+        
         // Get the reference to the database
         let db = Firestore.firestore()
         
-        // Get all the notes
+        var query: Query = db.collection("notes")
         
-        self.listener = db.collection("notes").addSnapshotListener({ snapshot, error in
+        if starredOnly {
+            query = query.whereField("isStarred", isEqualTo: true)
+        }
+        // Get all the notes
+        self.listener = query.addSnapshotListener({ snapshot, error in
             // Chech for errors:
             if error == nil && snapshot != nil {
                 var notes = [Note]()
