@@ -14,6 +14,13 @@ protocol NotesModelProtocol {
 
 class NotesModel {
     var delegate: NotesModelProtocol?
+    var listener: ListenerRegistration?
+    
+    // When object isnt being used this is how we clean up memory
+    deinit {
+        // Unregister listener
+        listener?.remove()
+    }
     
     // Return the notes
     func getNotes() {
@@ -21,7 +28,8 @@ class NotesModel {
         let db = Firestore.firestore()
         
         // Get all the notes
-        db.collection("notes").getDocuments { snapshot, error in
+        
+        self.listener = db.collection("notes").addSnapshotListener({ snapshot, error in
             // Chech for errors:
             if error == nil && snapshot != nil {
                 var notes = [Note]()
@@ -43,7 +51,7 @@ class NotesModel {
                     self.delegate?.notesRetrieved(notes: notes)
                 }
             }
-        }
+        })
     }
     
     func deleteNote(currentNote:Note) {

@@ -25,6 +25,13 @@ class NoteViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        // Clear out the texview
+        self.note = nil
+        titleTextField.text = ""
+        bodytextView.text = ""
+    }
+    
     @IBAction func deleteTapped(_ sender: UIButton) {
         if note != nil {
             notesModel?.deleteNote(currentNote: note!)

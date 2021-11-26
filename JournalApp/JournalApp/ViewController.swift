@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         
         if tableView.indexPathForSelectedRow != nil {
             notesViewController.note = notes[tableView.indexPathForSelectedRow!.row]
+            
+            // Also we need to deselect the row
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow! , animated: true)
         }
         
         notesViewController.notesModel = self.notesModel
