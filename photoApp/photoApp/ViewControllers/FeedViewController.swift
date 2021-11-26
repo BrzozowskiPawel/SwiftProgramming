@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  FeedViewController.swift
 //  photoApp
 //
 //  Created by Paweł Brzozowski on 27/11/2021.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class FeedViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,8 +18,6 @@ class LoginViewController: UIViewController {
     }
     
 
-    @IBAction func loginButtonTapped(_ sender: Any) {
-    }
     
 
 }

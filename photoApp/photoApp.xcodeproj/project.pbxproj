@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		040CCA382751A0FB0021E35E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA372751A0FB0021E35E /* LoginViewController.swift */; };
 		040CCA3A2751A2720021E35E /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA392751A2720021E35E /* CreateProfileViewController.swift */; };
+		040CCA3C2751A5360021E35E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3B2751A5360021E35E /* FeedViewController.swift */; };
+		040CCA3E2751A5C20021E35E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3D2751A5C20021E35E /* CameraViewController.swift */; };
+		040CCA402751A5CD0021E35E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */; };
 		04E1B27727519C960017DAE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B27627519C960017DAE0 /* AppDelegate.swift */; };
 		04E1B27927519C960017DAE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B27827519C960017DAE0 /* SceneDelegate.swift */; };
 		04E1B27E27519C960017DAE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E1B27C27519C960017DAE0 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		040CCA372751A0FB0021E35E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		040CCA392751A2720021E35E /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		040CCA3B2751A5360021E35E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		040CCA3D2751A5C20021E35E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		04E1B27327519C960017DAE0 /* photoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E1B27627519C960017DAE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E1B27827519C960017DAE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 			children = (
 				040CCA372751A0FB0021E35E /* LoginViewController.swift */,
 				040CCA392751A2720021E35E /* CreateProfileViewController.swift */,
+				040CCA3B2751A5360021E35E /* FeedViewController.swift */,
+				040CCA3D2751A5C20021E35E /* CameraViewController.swift */,
+				040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,8 +290,11 @@
 			files = (
 				040CCA3A2751A2720021E35E /* CreateProfileViewController.swift in Sources */,
 				040CCA382751A0FB0021E35E /* LoginViewController.swift in Sources */,
+				040CCA402751A5CD0021E35E /* SettingsViewController.swift in Sources */,
+				040CCA3C2751A5360021E35E /* FeedViewController.swift in Sources */,
 				04E1B27727519C960017DAE0 /* AppDelegate.swift in Sources */,
 				04E1B27927519C960017DAE0 /* SceneDelegate.swift in Sources */,
+				040CCA3E2751A5C20021E35E /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
