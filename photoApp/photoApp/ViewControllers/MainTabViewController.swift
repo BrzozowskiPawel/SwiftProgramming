@@ -77,7 +77,12 @@ extension MainTabViewController: UIImagePickerControllerDelegate & UINavigationC
         
         // Chech that selected imgae isn't nil
         if let selectedImage = selectedImage {
-            // Upload it
+            
+            // Get a refrence to the CameraVC
+            let cameraVC = self.selectedViewController as? CameraViewController
+            if let cameraVC = cameraVC {
+                cameraVC.savePhoto(image: selectedImage)
+            }
             
         }
         
