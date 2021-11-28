@@ -144,7 +144,7 @@
                             <constraint firstItem="dqC-Hc-V2n" firstAttribute="top" secondItem="7VZ-pY-BRE" secondAttribute="top" id="bNy-8j-aNp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="bTY-j8-RnR"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Feed" id="bTY-j8-RnR"/>
                     <connections>
                         <outlet property="tableView" destination="dqC-Hc-V2n" id="PQ9-dm-9zm"/>
                     </connections>
@@ -163,16 +163,16 @@
                         <viewLayoutGuide key="safeArea" id="hIj-m6-JAN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="8eJ-QL-79E"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Add" id="8eJ-QL-79E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZK-kb-cWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1341" y="1535"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab View Controller-->
         <scene sceneID="bvI-rs-S74">
             <objects>
-                <tabBarController storyboardIdentifier="mainTabBarController" id="6EP-LL-fEL" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" id="6EP-LL-fEL" customClass="MainTabViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zxn-D3-uw6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -212,7 +212,7 @@
                             <constraint firstItem="H3f-5e-jjl" firstAttribute="centerX" secondItem="Him-k7-swW" secondAttribute="centerX" id="mzQ-Ir-uoB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="rV0-6v-B0I"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Settings" id="rV0-6v-B0I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgi-3o-XFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
