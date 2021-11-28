@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JOg-Ld-wyN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -160,10 +161,48 @@
                     <view key="view" contentMode="scaleToFill" id="swo-T4-6VI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="AuI-SP-pJD">
+                                <rect key="frame" x="20" y="344" width="374" height="208"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Completed ✅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy0-hO-kGa">
+                                        <rect key="frame" x="69.5" y="0.0" width="235.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QjB-XE-vHq">
+                                        <rect key="frame" x="20" y="101" width="334" height="4"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sof-Pu-Wpo">
+                                        <rect key="frame" x="138.5" y="177" width="97.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go To Feed"/>
+                                        <connections>
+                                            <action selector="doneButtonPressed:" destination="kN0-qr-YnJ" eventType="touchUpInside" id="rwB-yQ-HBg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QjB-XE-vHq" secondAttribute="trailing" constant="20" id="0vx-QG-q77"/>
+                                    <constraint firstItem="QjB-XE-vHq" firstAttribute="leading" secondItem="AuI-SP-pJD" secondAttribute="leading" constant="20" id="jiv-CU-lFg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hIj-m6-JAN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AuI-SP-pJD" firstAttribute="leading" secondItem="hIj-m6-JAN" secondAttribute="leading" constant="20" id="FrR-xC-Il8"/>
+                            <constraint firstItem="AuI-SP-pJD" firstAttribute="centerY" secondItem="swo-T4-6VI" secondAttribute="centerY" id="i3I-uP-o3W"/>
+                            <constraint firstItem="hIj-m6-JAN" firstAttribute="trailing" secondItem="AuI-SP-pJD" secondAttribute="trailing" constant="20" id="y5F-hN-zWc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Add" id="8eJ-QL-79E"/>
+                    <connections>
+                        <outlet property="doneButton" destination="sof-Pu-Wpo" id="UCb-oW-Jcc"/>
+                        <outlet property="progresBar" destination="QjB-XE-vHq" id="w9x-N0-0UU"/>
+                        <outlet property="uploadLabel" destination="oy0-hO-kGa" id="mww-rJ-1eq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZK-kb-cWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

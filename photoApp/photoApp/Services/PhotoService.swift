@@ -13,7 +13,7 @@ import FirebaseAuth
 import CryptoKit
 
 class PhotoService {
-    static func savePhoto(image: UIImage) {
+    static func savePhoto(image: UIImage, progressUpdate: @escaping (Double) -> Void) {
         // Check that user is logged in
         if Auth.auth().currentUser == nil{
             return
@@ -37,7 +37,7 @@ class PhotoService {
         let ref = Storage.storage().reference().child("images/\(userID)/\(filename).jpg")
         
         // Upload the data
-        ref.putData(photoData!, metadata: nil) { metadata, error in
+        let uploadTask = ref.putData(photoData!, metadata: nil) { metadata, error in
             // Chech if upload was successful
             if error == nil {
                 
@@ -46,7 +46,12 @@ class PhotoService {
             }
         }
         
-        // Upon successful upload, create the dattabase entry
+        uploadTask.observe(.progress) { taskSnapshot in
+            let procentage = Double(taskSnapshot.progress!.totalUnitCount) / Double(taskSnapshot.progress!.totalUnitCount)
+            print("\(procentage)%")
+            progressUpdate(procentage)
+        }
+        
     }
     
     private static func createDatabseEntry(ref: StorageReference) {
