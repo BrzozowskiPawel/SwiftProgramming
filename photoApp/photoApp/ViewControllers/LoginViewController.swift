@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: FUIAuthDelegate {
+    
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         if error != nil {
             // There was an error
@@ -52,10 +53,32 @@ extension LoginViewController: FUIAuthDelegate {
         let user =  authDataResult?.user
         if let user = user {
             // chech on the database side if user has a profile
-            
-            // if user dont have a profile create a profile view contorller
-            
-            // if have password, go to tab bar controller
+            UserService.retrieveProfile(userID: user.uid) { user in
+                // Chechk if user is nil
+                if user == nil {
+                    // if user dont have a profile create a profile view contorller
+                    self.performSegue(withIdentifier: Constants.profileSegue, sender: self)
+                }
+                else {
+                    // if have profile, go to tab bar controller
+                    
+                    // Save user to local storage
+                    LocalStorageService.saveUser(userId: user!.userID, username: user!.username)
+                    
+                    // Create instance of the tab abr controller
+                    let tapBarVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.tabBarContoller)
+                    
+                    guard tapBarVC != nil else {
+                        return
+                    }
+                    
+                    // Set it as the root view coontroller of the window
+                    self.view.window?.rootViewController = tapBarVC
+                    self.view.window?.makeKeyAndVisible()
+                    
+                }
+                
+            }
         }
     }
 }
