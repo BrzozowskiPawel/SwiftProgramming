@@ -13,5 +13,6 @@ struct Constants {
     static let userIdKey = "storedUserId"
     static let usernameKey = "storedUsername"
     static let loginNavController = "loginNavController"
+    static let photoCellId = "PhotoCell"
 
 }

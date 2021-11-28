@@ -12,6 +12,7 @@
 		040CCA3C2751A5360021E35E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3B2751A5360021E35E /* FeedViewController.swift */; };
 		040CCA3E2751A5C20021E35E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3D2751A5C20021E35E /* CameraViewController.swift */; };
 		040CCA402751A5CD0021E35E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */; };
+		043C178C275438730075CA0E /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C178B275438730075CA0E /* PhotoTableViewCell.swift */; };
 		046E8DB42753B66100A8DA79 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E8DB32753B66100A8DA79 /* MainTabViewController.swift */; };
 		04D4F3A92753894600EF71FD /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4F3A82753894600EF71FD /* PhotoUser.swift */; };
 		04D4F3AB2753897C00EF71FD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4F3AA2753897C00EF71FD /* UserService.swift */; };
@@ -34,6 +35,7 @@
 		040CCA3B2751A5360021E35E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		040CCA3D2751A5C20021E35E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		043C178B275438730075CA0E /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		046E8DB32753B66100A8DA79 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		04D4F3A82753894600EF71FD /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
 		04D4F3AA2753897C00EF71FD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				040CCA3D2751A5C20021E35E /* CameraViewController.swift */,
 				040CCA3F2751A5CD0021E35E /* SettingsViewController.swift */,
 				046E8DB32753B66100A8DA79 /* MainTabViewController.swift */,
+				043C178B275438730075CA0E /* PhotoTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				04D4F3AB2753897C00EF71FD /* UserService.swift in Sources */,
 				040CCA402751A5CD0021E35E /* SettingsViewController.swift in Sources */,
 				04D4F3A92753894600EF71FD /* PhotoUser.swift in Sources */,
+				043C178C275438730075CA0E /* PhotoTableViewCell.swift in Sources */,
 				046E8DB42753B66100A8DA79 /* MainTabViewController.swift in Sources */,
 				04DA7D2227540E7E009F03D2 /* PhotoService.swift in Sources */,
 				04DA7D2027540E3E009F03D2 /* Photo.swift in Sources */,

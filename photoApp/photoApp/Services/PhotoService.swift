@@ -10,9 +10,41 @@ import UIKit
 import FirebaseStorage
 import FirebaseFirestore
 import FirebaseAuth
-import CryptoKit
 
 class PhotoService {
+    static func retrievePhotos(completion: @escaping ([Photo]) -> Void) {
+        // Get a database reference
+        let db = Firestore.firestore()
+        
+        // Get all the document from the photos collection
+        db.collection("photos").getDocuments { snapshot, error in
+            // Chech for errors
+            if error != nil {
+                return
+            }
+            // Get all the documents
+            let documents = snapshot?.documents
+            if let documents = documents {
+                
+                // Create an array of Photos
+                var photoArray = [Photo]()
+                
+                // Parse the documents into photo structs
+                for doc in documents {
+                    let p = Photo(snapshot: doc)
+                    if p != nil {
+                        // add to the array
+                        photoArray.insert(p!, at: 0)
+                    }
+                }
+                // Pass back the photo array
+                completion(photoArray)
+            }
+    
+        }
+        
+    }
+    
     static func savePhoto(image: UIImage, progressUpdate: @escaping (Double) -> Void) {
         // Check that user is logged in
         if Auth.auth().currentUser == nil{
