@@ -113,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="446" y="88"/>
         </scene>
-        <!--Feed-->
+        <!--Feed View Controller-->
         <scene sceneID="Wou-Du-7bX">
             <objects>
                 <viewController id="3na-zW-wJt" customClass="FeedViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,8 +124,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Hc-V2n">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoCell" rowHeight="300" id="nuV-eZ-kNI" customClass="PhotoTableViewCell" customModule="photoApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoCell" rowHeight="300" id="nuV-eZ-kNI" customClass="PhotoTableViewCell" customModule="photoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nuV-eZ-kNI" id="Bth-lj-6XT">
@@ -180,7 +181,7 @@
                             <constraint firstItem="dqC-Hc-V2n" firstAttribute="top" secondItem="7VZ-pY-BRE" secondAttribute="top" id="bNy-8j-aNp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Feed" id="bTY-j8-RnR"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="feed" id="bTY-j8-RnR"/>
                     <connections>
                         <outlet property="tableView" destination="dqC-Hc-V2n" id="PQ9-dm-9zm"/>
                     </connections>
@@ -189,7 +190,7 @@
             </objects>
             <point key="canvasLocation" x="445" y="1536"/>
         </scene>
-        <!--Add-->
+        <!--Camera View Controller-->
         <scene sceneID="FRN-xW-S2T">
             <objects>
                 <viewController id="kN0-qr-YnJ" customClass="CameraViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -232,7 +233,7 @@
                             <constraint firstItem="hIj-m6-JAN" firstAttribute="trailing" secondItem="AuI-SP-pJD" secondAttribute="trailing" constant="20" id="y5F-hN-zWc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Add" id="8eJ-QL-79E"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="camera" id="8eJ-QL-79E"/>
                     <connections>
                         <outlet property="doneButton" destination="sof-Pu-Wpo" id="UCb-oW-Jcc"/>
                         <outlet property="progresBar" destination="QjB-XE-vHq" id="w9x-N0-0UU"/>
@@ -262,7 +263,7 @@
             </objects>
             <point key="canvasLocation" x="1341" y="808"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="STb-Hu-vD7">
             <objects>
                 <viewController id="q18-Ne-cF8" customClass="SettingsViewController" customModule="photoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,7 +287,7 @@
                             <constraint firstItem="H3f-5e-jjl" firstAttribute="centerX" secondItem="Him-k7-swW" secondAttribute="centerX" id="mzQ-Ir-uoB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Settings" id="rV0-6v-B0I"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="" image="settings" id="rV0-6v-B0I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgi-3o-XFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,6 +295,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="24" height="24"/>
+        <image name="feed" width="24" height="18"/>
+        <image name="settings" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
