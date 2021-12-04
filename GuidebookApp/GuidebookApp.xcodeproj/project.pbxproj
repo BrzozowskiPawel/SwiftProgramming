@@ -19,6 +19,10 @@
 		04B4EE2C275B63260053C30E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE2B275B63260053C30E /* MapViewController.swift */; };
 		04B4EE2E275B632F0053C30E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE2D275B632F0053C30E /* NotesViewController.swift */; };
 		04B4EE31275B63DB0053C30E /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE30275B63DB0053C30E /* Constans.swift */; };
+		04B4EE36275B66DD0053C30E /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE32275B66DD0053C30E /* Place+CoreDataClass.swift */; };
+		04B4EE37275B66DD0053C30E /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE33275B66DD0053C30E /* Place+CoreDataProperties.swift */; };
+		04B4EE38275B66DD0053C30E /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE34275B66DD0053C30E /* Note+CoreDataClass.swift */; };
+		04B4EE39275B66DD0053C30E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4EE35275B66DD0053C30E /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		04B4EE2B275B63260053C30E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		04B4EE2D275B632F0053C30E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		04B4EE30275B63DB0053C30E /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		04B4EE32275B66DD0053C30E /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04B4EE33275B66DD0053C30E /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04B4EE34275B66DD0053C30E /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04B4EE35275B66DD0053C30E /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 		046681C0275A512B00100FB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04B4EE32275B66DD0053C30E /* Place+CoreDataClass.swift */,
+				04B4EE33275B66DD0053C30E /* Place+CoreDataProperties.swift */,
+				04B4EE34275B66DD0053C30E /* Note+CoreDataClass.swift */,
+				04B4EE35275B66DD0053C30E /* Note+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,10 +219,14 @@
 				046681AC275A510A00100FB5 /* ViewController.swift in Sources */,
 				046681A8275A510A00100FB5 /* AppDelegate.swift in Sources */,
 				04B4EE31275B63DB0053C30E /* Constans.swift in Sources */,
+				04B4EE39275B66DD0053C30E /* Note+CoreDataProperties.swift in Sources */,
 				046681AA275A510A00100FB5 /* SceneDelegate.swift in Sources */,
 				046681C5275A573000100FB5 /* PlaceViewController.swift in Sources */,
+				04B4EE37275B66DD0053C30E /* Place+CoreDataProperties.swift in Sources */,
+				04B4EE36275B66DD0053C30E /* Place+CoreDataClass.swift in Sources */,
 				04B4EE2E275B632F0053C30E /* NotesViewController.swift in Sources */,
 				04B4EE2A275B631C0053C30E /* InfoViewController.swift in Sources */,
+				04B4EE38275B66DD0053C30E /* Note+CoreDataClass.swift in Sources */,
 				046681B2275A510A00100FB5 /* GuidebookApp.xcdatamodeld in Sources */,
 				04B4EE2C275B63260053C30E /* MapViewController.swift in Sources */,
 			);
