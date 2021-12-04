@@ -31,6 +31,22 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Doublechack thah row was selcted
+        if tableView.indexPathForSelectedRow == nil {
+            return
+        }
+        
+        // Get the selcted prace form array
+        let selectedPlace =  self.places[tableView.indexPathForSelectedRow!.row]
+        
+        // Get a reference ot the place view contorller
+        let placeVC = segue.destination as! PlaceViewController
+        
+        // Set the place property od PlaceVC
+        placeVC.place = selectedPlace
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
