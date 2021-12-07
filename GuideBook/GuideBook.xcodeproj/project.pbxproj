@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0420051C275F66960010C52A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420051B275F66960010C52A /* Constants.swift */; };
+		04200521275F75F80010C52A /* Place.realm in Resources */ = {isa = PBXBuildFile; fileRef = 04200520275F75F80010C52A /* Place.realm */; };
+		04200523275F765A0010C52A /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04200522275F765A0010C52A /* PlaceService.swift */; };
 		043A8A7C275E45340090D9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8A7B275E45340090D9B6 /* AppDelegate.swift */; };
 		043A8A7E275E45340090D9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8A7D275E45340090D9B6 /* SceneDelegate.swift */; };
 		043A8A83275E45340090D9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A8A81275E45340090D9B6 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0420051B275F66960010C52A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04200520275F75F80010C52A /* Place.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Place.realm; sourceTree = "<group>"; };
+		04200522275F765A0010C52A /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 		043A8A78275E45340090D9B6 /* GuideBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A8A7B275E45340090D9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043A8A7D275E45340090D9B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0420051D275F752A0010C52A /* Realms */ = {
+			isa = PBXGroup;
+			children = (
+				04200520275F75F80010C52A /* Place.realm */,
+			);
+			path = Realms;
+			sourceTree = "<group>";
+		};
 		043A8A6F275E45340090D9B6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 		043A8A7A275E45340090D9B6 /* GuideBook */ = {
 			isa = PBXGroup;
 			children = (
+				0420051D275F752A0010C52A /* Realms */,
 				043A8A7B275E45340090D9B6 /* AppDelegate.swift */,
 				043A8A7D275E45340090D9B6 /* SceneDelegate.swift */,
 				043A8A97275E46F10090D9B6 /* Storyboards */,
@@ -128,6 +141,7 @@
 		043A8A95275E46E60090D9B6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				04200522275F765A0010C52A /* PlaceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,6 +243,7 @@
 				043A8A8B275E45340090D9B6 /* LaunchScreen.storyboard in Resources */,
 				043A8A88275E45340090D9B6 /* Assets.xcassets in Resources */,
 				043A8A83275E45340090D9B6 /* Main.storyboard in Resources */,
+				04200521275F75F80010C52A /* Place.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +300,7 @@
 				043A8A7C275E45340090D9B6 /* AppDelegate.swift in Sources */,
 				043A8A9D275E472E0090D9B6 /* NotesViewController.swift in Sources */,
 				043A8AA5275E47680090D9B6 /* Favorites.swift in Sources */,
+				04200523275F765A0010C52A /* PlaceService.swift in Sources */,
 				043A8A9B275E47250090D9B6 /* DetailViewController.swift in Sources */,
 				043A8A7E275E45340090D9B6 /* SceneDelegate.swift in Sources */,
 				043A8A86275E45340090D9B6 /* GuideBook.xcdatamodeld in Sources */,

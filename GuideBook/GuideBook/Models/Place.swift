@@ -10,12 +10,12 @@ import RealmSwift
 
 // Class need to be a subclas of Realm Object
 class Place: Object {
-    @objc dynamic var placeID: String?
-    @objc dynamic var name: String?
-    @objc dynamic var adress: String?
-    @objc dynamic var summary: String?
+    @objc dynamic var placeId:String?
+    @objc dynamic var name:String?
+    @objc dynamic var address:String?
+    @objc dynamic var summary:String?
     
     // This properties arent @objc becasue double couldnt be represneted in objc
-    var lat: Double?
-    var long: Double?
+    var lat:Double?
+    var long:Double?
 }

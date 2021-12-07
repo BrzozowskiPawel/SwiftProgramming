@@ -6,10 +6,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct Constants {
-    static let SEGUE_DETAIL = "goToDetail"
-    static let NOTESVC_STORYBOARDID = "NotesViewController"
-    static let COMPOSE_STORYBOARDID = "ComposeViewController"
-    static let MAP_STORYBOARDID = "MapViewController"
+    
+    struct Storyboard {
+        static let SEGUE_DETAIL = "goToDetail"
+        static let NOTESVC_VC = "NotesViewController"
+        static let COMPOSE_VC = "ComposeViewController"
+        static let MAP_VC = "MapViewController"
+    }
+    
+    struct RealmConfig {
+        static let placesConfig = Realm.Configuration(fileURL: Bundle.main.url(forResource: "Place", withExtension: "realm"), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: true, schemaVersion: 0, migrationBlock: nil, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
+    }
+    
 }
