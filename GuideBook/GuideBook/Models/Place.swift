@@ -15,7 +15,6 @@ class Place: Object {
     @objc dynamic var address:String?
     @objc dynamic var summary:String?
     
-    // This properties arent @objc becasue double couldnt be represneted in objc
-    var lat:Double?
-    var long:Double?
+    @objc dynamic var lat:Double = 0
+    @objc dynamic var long:Double = 0
 }

@@ -15,6 +15,8 @@ struct Constants {
         static let NOTESVC_VC = "NotesViewController"
         static let COMPOSE_VC = "ComposeViewController"
         static let MAP_VC = "MapViewController"
+        static let PLACECELLID = "PlaceCell"
+        static let NOTECELLID = "NoteCell"
     }
     
     struct RealmConfig {

@@ -9,21 +9,47 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    var place: Place?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
     }
-    */
-
+    
+    
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        
+        guard place != nil else {
+            // if palce is nil, abort this
+            return
+        }
+        
+        var note = Note()
+        
+        note.text = textView.text
+        
+        // Creing a formater for Date()
+        let formatter = DateFormatter()
+        
+        // Use NSDateFormatter website for more info
+        formatter.dateFormat = "EEEE, MMM d, yyyy - h:mm a"
+        
+        // Seting formated date
+        note.date = formatter.string(from: Date())
+        
+        note.placeId = place!.placeId!
+        
+        // Save the note
+        NoteService.addNote(note)
+        
+        // Dismiss the tab
+        dismiss(animated: false, completion: nil)
+    }
+    
 }

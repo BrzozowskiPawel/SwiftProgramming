@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0420051C275F66960010C52A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420051B275F66960010C52A /* Constants.swift */; };
-		04200521275F75F80010C52A /* Place.realm in Resources */ = {isa = PBXBuildFile; fileRef = 04200520275F75F80010C52A /* Place.realm */; };
 		04200523275F765A0010C52A /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04200522275F765A0010C52A /* PlaceService.swift */; };
+		04200525275F7DFF0010C52A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04200524275F7DFF0010C52A /* PlaceTableViewCell.swift */; };
+		0439D9FF2760A823006C9344 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439D9FE2760A823006C9344 /* NoteService.swift */; };
 		043A8A7C275E45340090D9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8A7B275E45340090D9B6 /* AppDelegate.swift */; };
 		043A8A7E275E45340090D9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8A7D275E45340090D9B6 /* SceneDelegate.swift */; };
 		043A8A83275E45340090D9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A8A81275E45340090D9B6 /* Main.storyboard */; };
@@ -24,13 +25,16 @@
 		043A8AA3275E475A0090D9B6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8AA2275E475A0090D9B6 /* Place.swift */; };
 		043A8AA5275E47680090D9B6 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8AA4275E47680090D9B6 /* Favorites.swift */; };
 		043A8AA7275E47720090D9B6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8AA6275E47720090D9B6 /* Note.swift */; };
+		049137822760210100F5625D /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049137812760210100F5625D /* NoteTableViewCell.swift */; };
+		04F0C6D62763F294005A5D2E /* Place.realm in Resources */ = {isa = PBXBuildFile; fileRef = 04F0C6D52763F294005A5D2E /* Place.realm */; };
 		43CE6C30CD0D72331A36E635 /* Pods_GuideBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E73FB2A9BA8E8B749A1D27 /* Pods_GuideBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0420051B275F66960010C52A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		04200520275F75F80010C52A /* Place.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Place.realm; sourceTree = "<group>"; };
 		04200522275F765A0010C52A /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
+		04200524275F7DFF0010C52A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		0439D9FE2760A823006C9344 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 		043A8A78275E45340090D9B6 /* GuideBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A8A7B275E45340090D9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043A8A7D275E45340090D9B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		043A8AA2275E475A0090D9B6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		043A8AA4275E47680090D9B6 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		043A8AA6275E47720090D9B6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		049137812760210100F5625D /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		04F0C6D52763F294005A5D2E /* Place.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Place.realm; sourceTree = "<group>"; };
 		39E73FB2A9BA8E8B749A1D27 /* Pods_GuideBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuideBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB74678D9332900DA4D5CEB4 /* Pods-GuideBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuideBook.release.xcconfig"; path = "Target Support Files/Pods-GuideBook/Pods-GuideBook.release.xcconfig"; sourceTree = "<group>"; };
 		F7034607B74330F3DC2DEA17 /* Pods-GuideBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuideBook.debug.xcconfig"; path = "Target Support Files/Pods-GuideBook/Pods-GuideBook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +73,7 @@
 		0420051D275F752A0010C52A /* Realms */ = {
 			isa = PBXGroup;
 			children = (
-				04200520275F75F80010C52A /* Place.realm */,
+				04F0C6D52763F294005A5D2E /* Place.realm */,
 			);
 			path = Realms;
 			sourceTree = "<group>";
@@ -112,6 +118,8 @@
 		043A8A92275E46D00090D9B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04200524275F7DFF0010C52A /* PlaceTableViewCell.swift */,
+				049137812760210100F5625D /* NoteTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				04200522275F765A0010C52A /* PlaceService.swift */,
+				0439D9FE2760A823006C9344 /* NoteService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -243,7 +252,7 @@
 				043A8A8B275E45340090D9B6 /* LaunchScreen.storyboard in Resources */,
 				043A8A88275E45340090D9B6 /* Assets.xcassets in Resources */,
 				043A8A83275E45340090D9B6 /* Main.storyboard in Resources */,
-				04200521275F75F80010C52A /* Place.realm in Resources */,
+				04F0C6D62763F294005A5D2E /* Place.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +308,13 @@
 				043A8A99275E471A0090D9B6 /* PlacesViewController.swift in Sources */,
 				043A8A7C275E45340090D9B6 /* AppDelegate.swift in Sources */,
 				043A8A9D275E472E0090D9B6 /* NotesViewController.swift in Sources */,
+				0439D9FF2760A823006C9344 /* NoteService.swift in Sources */,
+				04200525275F7DFF0010C52A /* PlaceTableViewCell.swift in Sources */,
 				043A8AA5275E47680090D9B6 /* Favorites.swift in Sources */,
 				04200523275F765A0010C52A /* PlaceService.swift in Sources */,
 				043A8A9B275E47250090D9B6 /* DetailViewController.swift in Sources */,
 				043A8A7E275E45340090D9B6 /* SceneDelegate.swift in Sources */,
+				049137822760210100F5625D /* NoteTableViewCell.swift in Sources */,
 				043A8A86275E45340090D9B6 /* GuideBook.xcdatamodeld in Sources */,
 				043A8AA7275E47720090D9B6 /* Note.swift in Sources */,
 				043A8AA3275E475A0090D9B6 /* Place.swift in Sources */,
@@ -466,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
