@@ -1,10 +1,8 @@
 //
-//  Note+CoreDataProperties.swift
-//  Guidebook App
+//  AppDelegate.swift
+//  GuidebookApp
 //
-//  Created by Christopher Ching on 2020-07-29.
-//  Copyright © 2020 Christopher Ching. All rights reserved.
-//
+//  Created by Paweł Brzozowski on 03/12/2021.
 //
 
 import Foundation
@@ -17,7 +15,12 @@ extension Note {
         return NSFetchRequest<Note>(entityName: "Note")
     }
 
-    @NSManaged public var text: String?
     @NSManaged public var date: Date?
+    @NSManaged public var text: String?
+    @NSManaged public var place: Place?
+
+}
+
+extension Note : Identifiable {
 
 }

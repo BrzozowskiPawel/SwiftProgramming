@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832A791F252E367F00AD9A79 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A791B252E367F00AD9A79 /* Place+CoreDataClass.swift */; };
+		832A7920252E367F00AD9A79 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A791C252E367F00AD9A79 /* Place+CoreDataProperties.swift */; };
+		832A7921252E367F00AD9A79 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A791D252E367F00AD9A79 /* Note+CoreDataClass.swift */; };
+		832A7922252E367F00AD9A79 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A791E252E367F00AD9A79 /* Note+CoreDataProperties.swift */; };
+		832A7926252E36C400AD9A79 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A7925252E36C400AD9A79 /* AddNoteViewController.swift */; };
 		8355E0A7252B8DD800407A83 /* preloadedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8355E0A6252B8DD800407A83 /* preloadedData.json */; };
 		8355E0AA252B997100407A83 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355E0A9252B997100407A83 /* PlaceTableViewCell.swift */; };
-		8381ADA324D22DF9009B9F75 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381AD9F24D22DF9009B9F75 /* Note+CoreDataClass.swift */; };
-		8381ADA424D22DF9009B9F75 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381ADA024D22DF9009B9F75 /* Note+CoreDataProperties.swift */; };
-		8381ADA524D22DF9009B9F75 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381ADA124D22DF9009B9F75 /* Place+CoreDataClass.swift */; };
-		8381ADA624D22DF9009B9F75 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381ADA224D22DF9009B9F75 /* Place+CoreDataProperties.swift */; };
 		83B6C62C24D20F5D00EF8147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6C62B24D20F5D00EF8147 /* AppDelegate.swift */; };
 		83B6C62E24D20F5D00EF8147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6C62D24D20F5D00EF8147 /* SceneDelegate.swift */; };
 		83B6C63024D20F5D00EF8147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6C62F24D20F5D00EF8147 /* ViewController.swift */; };
@@ -28,12 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832A791B252E367F00AD9A79 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
+		832A791C252E367F00AD9A79 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		832A791D252E367F00AD9A79 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		832A791E252E367F00AD9A79 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		832A7925252E36C400AD9A79 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		8355E0A6252B8DD800407A83 /* preloadedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preloadedData.json; sourceTree = "<group>"; };
 		8355E0A9252B997100407A83 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
-		8381AD9F24D22DF9009B9F75 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8381ADA024D22DF9009B9F75 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8381ADA124D22DF9009B9F75 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8381ADA224D22DF9009B9F75 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		83B6C62824D20F5D00EF8147 /* Guidebook App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidebook App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B6C62B24D20F5D00EF8147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B6C62D24D20F5D00EF8147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 				83B6C64424D20F9C00EF8147 /* Models */,
 				83B6C64324D20F9700EF8147 /* Views */,
 				83B6C64224D20F8F00EF8147 /* ViewControllers */,
-				83B6C64624D20FB800EF8147 /* CoreData */,
+				83B6C64624D20FB800EF8147 /* Data */,
 				83B6C64F24D2140200EF8147 /* Helpers */,
 				83B6C63724D20F5F00EF8147 /* Assets.xcassets */,
 				83B6C63C24D20F5F00EF8147 /* Info.plist */,
@@ -102,6 +104,7 @@
 				83B6C64924D2134F00EF8147 /* InfoViewController.swift */,
 				83B6C64B24D2135700EF8147 /* MapViewController.swift */,
 				83B6C64D24D2136000EF8147 /* NotesViewController.swift */,
+				832A7925252E36C400AD9A79 /* AddNoteViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,10 +120,10 @@
 		83B6C64424D20F9C00EF8147 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8381AD9F24D22DF9009B9F75 /* Note+CoreDataClass.swift */,
-				8381ADA024D22DF9009B9F75 /* Note+CoreDataProperties.swift */,
-				8381ADA124D22DF9009B9F75 /* Place+CoreDataClass.swift */,
-				8381ADA224D22DF9009B9F75 /* Place+CoreDataProperties.swift */,
+				832A791B252E367F00AD9A79 /* Place+CoreDataClass.swift */,
+				832A791C252E367F00AD9A79 /* Place+CoreDataProperties.swift */,
+				832A791D252E367F00AD9A79 /* Note+CoreDataClass.swift */,
+				832A791E252E367F00AD9A79 /* Note+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,13 +137,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		83B6C64624D20FB800EF8147 /* CoreData */ = {
+		83B6C64624D20FB800EF8147 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				8355E0A6252B8DD800407A83 /* preloadedData.json */,
 				83B6C63424D20F5D00EF8147 /* Guidebook_App.xcdatamodeld */,
 			);
-			path = CoreData;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		83B6C64F24D2140200EF8147 /* Helpers */ = {
@@ -223,18 +226,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8381ADA424D22DF9009B9F75 /* Note+CoreDataProperties.swift in Sources */,
 				83B6C63024D20F5D00EF8147 /* ViewController.swift in Sources */,
+				832A7922252E367F00AD9A79 /* Note+CoreDataProperties.swift in Sources */,
+				832A7920252E367F00AD9A79 /* Place+CoreDataProperties.swift in Sources */,
 				83B6C62C24D20F5D00EF8147 /* AppDelegate.swift in Sources */,
 				8355E0AA252B997100407A83 /* PlaceTableViewCell.swift in Sources */,
 				83B6C62E24D20F5D00EF8147 /* SceneDelegate.swift in Sources */,
 				83B6C64824D210A600EF8147 /* PlaceViewController.swift in Sources */,
-				8381ADA524D22DF9009B9F75 /* Place+CoreDataClass.swift in Sources */,
 				83B6C64E24D2136000EF8147 /* NotesViewController.swift in Sources */,
+				832A7926252E36C400AD9A79 /* AddNoteViewController.swift in Sources */,
+				832A7921252E367F00AD9A79 /* Note+CoreDataClass.swift in Sources */,
 				83B6C64A24D2134F00EF8147 /* InfoViewController.swift in Sources */,
-				8381ADA624D22DF9009B9F75 /* Place+CoreDataProperties.swift in Sources */,
+				832A791F252E367F00AD9A79 /* Place+CoreDataClass.swift in Sources */,
 				83B6C63624D20F5D00EF8147 /* Guidebook_App.xcdatamodeld in Sources */,
-				8381ADA324D22DF9009B9F75 /* Note+CoreDataClass.swift in Sources */,
 				83B6C64C24D2135700EF8147 /* MapViewController.swift in Sources */,
 				83B6C65124D2142200EF8147 /* Constants.swift in Sources */,
 			);
@@ -388,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.GuidebookApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.com.GuideBookCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -407,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.GuidebookApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.com.GuideBookCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

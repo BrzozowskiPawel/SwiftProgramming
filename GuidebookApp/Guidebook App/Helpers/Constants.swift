@@ -1,9 +1,8 @@
 //
-//  Constants.swift
-//  Guidebook App
+//  AppDelegate.swift
+//  GuidebookApp
 //
-//  Created by Christopher Ching on 2020-07-29.
-//  Copyright © 2020 Christopher Ching. All rights reserved.
+//  Created by Paweł Brzozowski on 03/12/2021.
 //
 
 import Foundation
@@ -16,8 +15,10 @@ class Constants {
     static var INFO_VIEWCONTROLLER = "InfoVC"
     static var MAP_VIEWCONTROLLER = "MapVC"
     static var NOTES_VIEWCONTROLLER = "NotesVC"
+    static var ADDNOTES_VIEWCONTROLLER = "AddNoteVC"
     
     static var PLACE_CELL = "PlaceCell"
+    static var NOTE_CELL = "NoteCell"
 }
 
 
