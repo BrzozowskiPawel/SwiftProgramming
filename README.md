@@ -241,7 +241,7 @@ Take a look and ask my questions about it❕ </br>
   The case of this app was to try to rebuild the app as it was designed in Figma. </br>
   Also besides building UI in Swift, I have learned the basics of UI.UX design and Figma. </br> /<br>
   
-  Here are screeanshots of Figma design:
+  Here are screeanshots of Figma design: </br>
   <img src="readme_files/figma1.png" alt="News App" width="719"/>  </br>
   <img src="readme_files/figma2.png" alt="News App" width="707"/>  </br>
   
