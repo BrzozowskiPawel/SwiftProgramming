@@ -171,5 +171,80 @@ Take a look and ask my questions about it❕ </br>
 
 # Databases 💾
 
-</br> </br> 
+## Firebase basics
+<details>
+  <summary>Click to expand details!</summary>
+  This app is just a project where I have been learning CRUD with Firebase. </br>
+  I won't attach any gifs because all this app does is perform CRUD with no visual effects. </br>
+  
+</details>
+
+## Journal App - Firebase powered app for saving and quering notes!
+<details>
+  <summary>Click to expand details!</summary>
+  Journal app for saving notes with help of Firebase. </br>
+  I have been using Firebase methods to CRUD data and also created a basic UI. </bd>
+  
+  ### Demo:
+ 
+ <img src="readme_files/JournalAppDemo.gif" alt="News App" width="350"/>  </br>
+  
+</details>
+
+
+## PhotoApp - UIImagepicker, Firebase auth and listeners
+<details>
+  <summary>Click to expand details!</summary>
+  In this app I have implemented:
+  - authentication and login in with Firebase auth
+  - uploading and downloading photos with Firebase storage
+  - Taking pictures or picking pictures with UIImagepicker
+  
+  All of the functions mentioned above are shown on gifs:
+  
+  ### Creating a user:
+ <img src="readme_files/Photo_creatingnewuser.gif" alt="News App" width="350"/>  </br>
+ 
+  ### Log in:
+ <img src="readme_files/Photo_LoginIn.gif" alt="News App" width="350"/>  </br>
+ 
+ ### Upload a new photo:
+ <img src="readme_files/Photo_new_photo.gif" alt="News App" width="350"/>  </br>
+ 
+ ### Sign out:
+ <img src="readme_files/Photo_signout.gif" alt="News App" width="350"/>  </br>
+ 
+</details>
+
+## Guidebook App (CoreData) - Using CoreData as DB, MapView and mooooore!
+<details>
+  <summary>Click to expand details!</summary>
+  An app containing CoreData as database technology. </br>
+  Users can view locations, add notes about them and see them in mapView. </br>
+  All the data is being stored inside CoreData so users don't have to worry about losing data when the app will be closed. </br>
+  
+  ### Demo:
+ 
+ <img src="readme_files/GuideBook_coredata_demo.gif" alt="News App" width="350"/>  </br>
+  
+</details>
+
+
+## Guidebook App (Realm) - upgraded verion of previous app now using Realm DB.
+<details>
+  <summary>Click to expand details!</summary>
+  In this app I have used Mongo DB Realm database. </br>
+  Futhermore app works similar to previous verions with few upgrades. </br>
+  User now can calculate route to the specyfic point or locate user. </br>
+  
+  ### Demo:
+ 
+ <img src="readme_files/GuideBook_demo.gif" alt="News App" width="350"/>  </br>
+ 
+ ### Route:
+ 
+ <img src="readme_files/GuideBook_route.gif" alt="News App" width="350"/>  </br>
+  
+</details>
+
 # PLEASE KEEP IN MIND THAT THIS REPO IS STILL UNDER DEVELOPMENT
