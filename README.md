@@ -1,4 +1,4 @@
-# Swift Programming - UNDER DEVELOPMENT 🏆
+# Swift Programming 🏆
 
 This repo will contain a wide range of different apps written with Swift on purpose to make me a better programmer. </br>
 The level of difficulty will increase with time. </br>
@@ -6,21 +6,6 @@ I would like to relearn the basics to have solid knowledge and then make more de
 All App here is part of this [course](https://codewithchris.com/) not only 👀.</br>
 I try to learn things that I don't know and also add some extra features to them. </br>
 Take a look and ask my questions about it❕ </br>
-
-## Table of Contents
-- [Layout](#layout)
-
-- [Card Wars](#card-wars)
-
-- [Picture Guesser](#picture-guesser)
-
-- [Cards war game](#improvements)
-
-- [Star Wars Delegate-Protocol](#star-wars-delegate-protocol)
-
-- [Quiz App](#quiz-app)
-
-- [News app](#news-app)
 
 
 # Swift foundations 👶
@@ -247,4 +232,20 @@ Take a look and ask my questions about it❕ </br>
   
 </details>
 
-# PLEASE KEEP IN MIND THAT THIS REPO IS STILL UNDER DEVELOPMENT
+# iOS App Design 
+
+## MealApp - building iOS App with Figma design.
+<details>
+  <summary>Click to expand details!</summary>
+  The purpose of this project was to build an app from Figma UI design. </bd>
+  The case of this app was to try to rebuild the app as it was designed in Figma. </br>
+  Also besides building UI in Swift, I have learned the basics of UI.UX design and Figma. </br> /<br>
+  
+  Here are screeanshots of Figma design:
+  <img src="readme_files/figma1.png" alt="News App" width="719"/>  </br>
+  <img src="readme_files/figma2.png" alt="News App" width="707"/>  </br>
+  
+  ### App Demo:
+ <img src="readme_files/MealAppDemo.gif" alt="News App" width="350"/>  </br>
+  
+</details>
