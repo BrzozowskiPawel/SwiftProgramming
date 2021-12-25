@@ -25,6 +25,12 @@ class FirstViewController: UIViewController {
         self.view.addSubview(contentView)
         
         setUpContent()
+        
+        // Buttons pressing:
+        fbButton.addTarget(self, action: #selector(fbButtonPress), for: .touchUpInside)
+        gmailButton.addTarget(self, action: #selector(self.gmailButtonPress), for: .touchUpInside)
+        emailButton.addTarget(self, action: #selector(self.emailButtonPress), for: .touchUpInside)
+        
     }
     
 
@@ -127,6 +133,19 @@ class FirstViewController: UIViewController {
         
         titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: hintLabel.topAnchor, constant: -50).isActive = true
+    }
+    
+    // MARK: - Buttons pressed
+    @objc func fbButtonPress(){
+        print("fb button pressed")
+    }
+
+    @objc func gmailButtonPress(){
+        print("gmail button pressed")
+    }
+
+    @objc func emailButtonPress(){
+        print("email button pressed")
     }
     
     /*
