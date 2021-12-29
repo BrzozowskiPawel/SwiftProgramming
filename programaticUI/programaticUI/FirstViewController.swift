@@ -84,6 +84,10 @@ class FirstViewController: UIViewController {
         fbButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -50).isActive = true
         fbButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         fbButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        
+        fbButton.layer.cornerRadius = 20.0
+        fbButton.layer.masksToBounds =  true
+        fbButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
     }
 
     func setUpEmailButton(){
@@ -97,6 +101,9 @@ class FirstViewController: UIViewController {
         gmailButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -50).isActive = true
         gmailButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         gmailButton.topAnchor.constraint(equalTo: fbButton.bottomAnchor,constant: 20).isActive = true
+        
+        emailButton.layer.cornerRadius = 20.0
+        emailButton.layer.masksToBounds =  true
     }
 
     func setUpGmailButton(){
@@ -111,6 +118,9 @@ class FirstViewController: UIViewController {
         emailButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -50).isActive = true
         emailButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         emailButton.topAnchor.constraint(equalTo: gmailButton.bottomAnchor,constant: 20).isActive = true
+        
+        gmailButton.layer.cornerRadius = 20.0
+        gmailButton.layer.masksToBounds =  true
     }
 
     func setUpHintLabel(){
@@ -137,7 +147,15 @@ class FirstViewController: UIViewController {
     
     // MARK: - Buttons pressed
     @objc func fbButtonPress(){
+        self.navigationController?.hidesBarsOnTap = true
         print("fb button pressed")
+        let secondViewController = SecondViewController()
+        
+        secondViewController.title = "Second Screen"
+        
+        secondViewController.modalPresentationStyle = .fullScreen
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
 
     @objc func gmailButtonPress(){
