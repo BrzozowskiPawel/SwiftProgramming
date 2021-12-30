@@ -59,10 +59,66 @@ class FifthViewController: UIViewController {
         
         // Opt to delay how each instance is drawn/added. This can be done by simply setting the .instanceDelay in seconds. In order to do that divide the duration of the animation to the number of instances.
         replicatorLayer.instanceDelay = fade.duration / Double(replicatorLayer.instanceCount)
+        
     }
     
     
     @IBAction func circleLoadingAnimation(_ sender: Any) {
+        // Create a constant of type CAReplicatorLayer().
+        let replicatorLayer = CAReplicatorLayer()
+        
+        // We want this circle loading animation to be at the center of the screen.
+        replicatorLayer.position = CGPoint(x: self.view.frame.midX, y: self.view.frame.midY)
+        
+        // Create a base CALayer that will be replicated.
+        let circle = CALayer()
+        
+        // Set the .backgroundColor
+        circle.backgroundColor = UIColor.blue.cgColor
+        
+        // Set the .frame of our object to CGRect(origin: origin, size: CGSize(width:width, height: height)) - it will create a square
+        circle.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: 15, height: 15))
+        
+        // To change it to circle shape round the corners of the square. The value should be half the width and height.
+        circle.cornerRadius = 7.5
+        
+        // Set the .position our object to a CGPoint(x, y).
+        circle.position = CGPoint(x: 0, y: 50)
+        
+        // Create a constant of type Int - how many circles.
+        let instanceCount = 15
+        
+        // Set the .instanceCount of  CAReplicatorLayer to the calculated val.
+        replicatorLayer.instanceCount = instanceCount
+        
+        // Now we need to calculate the angle of each object/replica to make a big circle shape. To do this multiply PI by 2 and divide it based on the number of instances.
+        // This will look like this PI * 2 / instanceCount. Make sure the PI is a CGFloat, simply do a CGFloat.pi
+        let angle = -CGFloat.pi * 2 / CGFloat(instanceCount)
+        
+        // Set the .instanceTransform our  CAReplicatorLayer to a CATransform3DMakeRotation(angle, x, y, z). Set the angle to the value calculated. Set x and y to 0, but set z to 1 to bring it to the front so that it will not be hidden by our layer.
+        replicatorLayer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1)
+        
+        // Add the circle CALayer to our CAReplicatorLayer by doing a .addSublayer(layer).
+        replicatorLayer.addSublayer(circle)
+        
+        // Add the CAReplicatorLayer to view's CALayer by doing self.view.layer.addSublayer(layer). F
+        self.view.layer.addSublayer(replicatorLayer)
+        
+        // Now circle will be displayed but it won't animate
+        
+        // To fully utilize CAReplicatorLayer add an animation to the CALayer. Use for ex.  CABasicAnimation
+        let scale = CABasicAnimation(keyPath: "transform.scale")
+        scale.fromValue = 1
+        scale.toValue = 0
+        scale.duration = 1.5
+        scale.repeatCount = Float.infinity
+        circle.add(scale, forKey: nil)
+        
+        // Opt to delay how each instance is drawn/added. This can be done by simply setting the .instanceDelay in seconds. In order to do that divide the duration of the animation to the number of instances.
+        replicatorLayer.instanceDelay = scale.duration / Double(replicatorLayer.instanceCount)
+        
+        // OPTIONAL: Notice that the start of the animation looks weird because all the "circles". To make it look better and cleaner transform the scale to make circle to an almost none existent scale (0.01) so it won't be visible until the animation kicks in.
+        circle.transform = CATransform3DMakeScale(0.01, 0.01, 0.01)
     }
     
 }
