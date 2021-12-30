@@ -19,18 +19,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func animationSegmentedController(_ sender: Any) {
+        
+    }
+    
+    @IBAction func animatedButtonPressed(_ sender: Any) {
         switch animationSegmentedController.selectedSegmentIndex
             {
             case 0:
-            animatedLabel.text = "1"
+            animationTypeLabel.text = "Shake animation"
+            animatedLabel.shakeAnimation(shakeVal: 5)
+            animatedButton.shakeAnimation(shakeVal: 5)
             case 1:
-            animatedLabel.text = "2"
+            animationTypeLabel.text = "Fade animation"
+            animatedLabel.fadeAnimation()
+            animatedButton.fadeAnimation()
+            case 2:
+            animationTypeLabel.text = "Scale animation"
+            animatedLabel.scaleAnimation(startSize: 1, endSize: 2)
+            animatedButton.scaleAnimation(startSize: 1, endSize: 2)
             default:
                 break
             }
     }
-    
     
 }
 
