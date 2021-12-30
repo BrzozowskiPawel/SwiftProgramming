@@ -16,6 +16,7 @@
 		049B5F29277D2B2800A52EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B5F27277D2B2800A52EF3 /* Main.storyboard */; };
 		049B5F2B277D2B2900A52EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B5F2A277D2B2900A52EF3 /* Assets.xcassets */; };
 		049B5F2E277D2B2900A52EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B5F2C277D2B2900A52EF3 /* LaunchScreen.storyboard */; };
+		04ACE828277E0A0900DFAF96 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		049B5F2A277D2B2900A52EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049B5F2D277D2B2900A52EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049B5F2F277D2B2900A52EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				049B5F23277D2B2800A52EF3 /* SceneDelegate.swift */,
 				049B5F25277D2B2800A52EF3 /* ViewController.swift */,
 				04759947277DDE2E00382BC7 /* SecondViewController.swift */,
+				04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */,
 				049B5F27277D2B2800A52EF3 /* Main.storyboard */,
 				049B5F2A277D2B2900A52EF3 /* Assets.xcassets */,
 				049B5F2C277D2B2900A52EF3 /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				04759948277DDE2E00382BC7 /* SecondViewController.swift in Sources */,
 				049B5F26277D2B2800A52EF3 /* ViewController.swift in Sources */,
 				049B5F22277D2B2800A52EF3 /* AppDelegate.swift in Sources */,
+				04ACE828277E0A0900DFAF96 /* ThirdViewController.swift in Sources */,
 				0475994D277DE01700382BC7 /* AnimatedLabel.swift in Sources */,
 				0475994A277DDFF900382BC7 /* AnimatedButton.swift in Sources */,
 				049B5F24277D2B2800A52EF3 /* SceneDelegate.swift in Sources */,

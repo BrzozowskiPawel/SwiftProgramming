@@ -166,7 +166,7 @@
         <!--CASpringAnimation-->
         <scene sceneID="1yw-ta-owP">
             <objects>
-                <viewController id="Oby-Ca-vSQ" sceneMemberID="viewController">
+                <viewController id="Oby-Ca-vSQ" customClass="ThirdViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k6e-Jb-izN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,6 +184,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="flame.fill" catalog="system" buttonSize="large"/>
+                                <connections>
+                                    <action selector="flameButtonPressed:" destination="Oby-Ca-vSQ" eventType="touchUpInside" id="kjI-ch-KlO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLz-Yj-nTK">
                                 <rect key="frame" x="182" y="108" width="50" height="50"/>
@@ -193,6 +196,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="arrowBUttonPressed:" destination="Oby-Ca-vSQ" eventType="touchUpInside" id="46V-H4-3Ho"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fmA-K0-yU4"/>
@@ -209,6 +215,10 @@
                     <navigationItem key="navigationItem" title="CASpringAnimation" id="FaB-4P-chH">
                         <barButtonItem key="backBarButtonItem" title="BACK" id="yJW-OH-LWa"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="springArrow" destination="cLz-Yj-nTK" id="lBo-LU-c1f"/>
+                        <outlet property="springFlame" destination="OV6-T5-uwA" id="lfh-PX-w1X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBZ-Vl-lzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
