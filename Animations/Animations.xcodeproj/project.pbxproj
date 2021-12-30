@@ -19,6 +19,7 @@
 		04ACE828277E0A0900DFAF96 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */; };
 		04ACE82A277E0FEF00DFAF96 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE829277E0FEF00DFAF96 /* FourthViewController.swift */; };
 		04ACE82C277E1B5200DFAF96 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE82B277E1B5200DFAF96 /* FifthViewController.swift */; };
+		04ACE82E277E2A8900DFAF96 /* CATransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE82D277E2A8900DFAF96 /* CATransactionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		04ACE829277E0FEF00DFAF96 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		04ACE82B277E1B5200DFAF96 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		04ACE82D277E2A8900DFAF96 /* CATransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransactionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				04ACE827277E0A0900DFAF96 /* ThirdViewController.swift */,
 				04ACE829277E0FEF00DFAF96 /* FourthViewController.swift */,
 				04ACE82B277E1B5200DFAF96 /* FifthViewController.swift */,
+				04ACE82D277E2A8900DFAF96 /* CATransactionViewController.swift */,
 				049B5F27277D2B2800A52EF3 /* Main.storyboard */,
 				049B5F2A277D2B2900A52EF3 /* Assets.xcassets */,
 				049B5F2C277D2B2900A52EF3 /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 				049B5F22277D2B2800A52EF3 /* AppDelegate.swift in Sources */,
 				04ACE828277E0A0900DFAF96 /* ThirdViewController.swift in Sources */,
 				04ACE82A277E0FEF00DFAF96 /* FourthViewController.swift in Sources */,
+				04ACE82E277E2A8900DFAF96 /* CATransactionViewController.swift in Sources */,
 				0475994D277DE01700382BC7 /* AnimatedLabel.swift in Sources */,
 				0475994A277DDFF900382BC7 /* AnimatedButton.swift in Sources */,
 				049B5F24277D2B2800A52EF3 /* SceneDelegate.swift in Sources */,
