@@ -239,6 +239,9 @@
                                 <rect key="frame" x="112.5" y="781" width="189" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to CAReplicationLayer"/>
+                                <connections>
+                                    <segue destination="8yX-zT-ZEg" kind="show" id="pOz-zO-y19"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rLt-Pc-dZh">
                                 <rect key="frame" x="137" y="98" width="140" height="31"/>
@@ -271,11 +274,63 @@
                             <constraint firstItem="rLt-Pc-dZh" firstAttribute="top" secondItem="oRs-N4-flp" secondAttribute="top" constant="10" id="laX-hO-fuk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="CAEmitterLayer" id="pBy-SN-QAO"/>
+                    <navigationItem key="navigationItem" title="CAEmitterLayer" id="pBy-SN-QAO">
+                        <barButtonItem key="backBarButtonItem" title="BACK" id="Iqs-W1-gt1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMO-1j-JTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3406" y="129"/>
+        </scene>
+        <!--CAReplicatorLayer-->
+        <scene sceneID="8GY-A5-big">
+            <objects>
+                <viewController id="8yX-zT-ZEg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kea-sG-5Sm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozO-ev-yJ4">
+                                <rect key="frame" x="130" y="781" width="154.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to CAtransaction"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-Ay-NnC">
+                                <rect key="frame" x="133" y="98" width="148" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-gd-tAq">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Anim 1"/>
+                                        <connections>
+                                            <action selector="circularEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="xeA-zG-ajK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAC-5G-Odp">
+                                        <rect key="frame" x="79" y="0.0" width="69" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Anim 2"/>
+                                        <connections>
+                                            <action selector="fallingEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="9m8-WO-8RS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ofv-Fw-muj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9pi-Ay-NnC" firstAttribute="centerX" secondItem="kea-sG-5Sm" secondAttribute="centerX" id="9fX-M4-ERp"/>
+                            <constraint firstItem="ozO-ev-yJ4" firstAttribute="centerX" secondItem="kea-sG-5Sm" secondAttribute="centerX" id="IYB-PG-YbH"/>
+                            <constraint firstItem="9pi-Ay-NnC" firstAttribute="top" secondItem="Ofv-Fw-muj" secondAttribute="top" constant="10" id="JId-dn-SmF"/>
+                            <constraint firstItem="Ofv-Fw-muj" firstAttribute="bottom" secondItem="ozO-ev-yJ4" secondAttribute="bottom" constant="50" id="LvS-pN-0Ke"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAReplicatorLayer" id="wy6-oA-NHM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGH-m3-U54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4152" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Uf-IX-MVb">
