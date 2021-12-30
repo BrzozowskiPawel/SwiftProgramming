@@ -290,14 +290,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozO-ev-yJ4">
-                                <rect key="frame" x="130" y="781" width="154.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go to CAtransaction"/>
-                                <connections>
-                                    <segue destination="cLl-ih-gMf" kind="show" id="Euc-Ae-ANl"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-Ay-NnC">
                                 <rect key="frame" x="133" y="98" width="148" height="31"/>
                                 <subviews>
@@ -326,9 +318,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9pi-Ay-NnC" firstAttribute="centerX" secondItem="kea-sG-5Sm" secondAttribute="centerX" id="9fX-M4-ERp"/>
-                            <constraint firstItem="ozO-ev-yJ4" firstAttribute="centerX" secondItem="kea-sG-5Sm" secondAttribute="centerX" id="IYB-PG-YbH"/>
                             <constraint firstItem="9pi-Ay-NnC" firstAttribute="top" secondItem="Ofv-Fw-muj" secondAttribute="top" constant="10" id="JId-dn-SmF"/>
-                            <constraint firstItem="Ofv-Fw-muj" firstAttribute="bottom" secondItem="ozO-ev-yJ4" secondAttribute="bottom" constant="50" id="LvS-pN-0Ke"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CAReplicatorLayer" id="wy6-oA-NHM">
@@ -338,51 +328,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGH-m3-U54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4152" y="131"/>
-        </scene>
-        <!--CATransaction-->
-        <scene sceneID="l2S-bC-zdq">
-            <objects>
-                <viewController id="cLl-ih-gMf" customClass="CATransactionViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TO9-CX-DLX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-0m-M4R">
-                                <rect key="frame" x="137" y="98" width="140" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc2-TB-vPr">
-                                        <rect key="frame" x="0.0" y="0.0" width="65" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Tran 1"/>
-                                        <connections>
-                                            <action selector="circularEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="X1O-Wu-Hc7"/>
-                                            <action selector="replicationAnimation:" destination="8yX-zT-ZEg" eventType="touchUpInside" id="XK0-tQ-P3K"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-ws-K7q">
-                                        <rect key="frame" x="75" y="0.0" width="65" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Tran 2"/>
-                                        <connections>
-                                            <action selector="circleLoadingAnimation:" destination="8yX-zT-ZEg" eventType="touchUpInside" id="hOn-1e-pCK"/>
-                                            <action selector="fallingEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="lKj-k8-qGa"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="KN9-59-gzG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bVw-0m-M4R" firstAttribute="top" secondItem="KN9-59-gzG" secondAttribute="top" constant="10" id="CHj-FH-5nb"/>
-                            <constraint firstItem="bVw-0m-M4R" firstAttribute="centerX" secondItem="TO9-CX-DLX" secondAttribute="centerX" id="ZDk-a2-nU0"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="CATransaction" id="e3t-pq-WkY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w3S-AD-TsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5003" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Uf-IX-MVb">
