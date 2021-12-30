@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to CAKeyFrameAniamtion"/>
                                 <connections>
-                                    <segue destination="c4B-F9-wJJ" kind="show" id="TOB-dV-gZV"/>
+                                    <segue destination="uBr-wa-Fux" kind="show" id="afa-eG-WwS"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rJh-BK-JSF">
@@ -102,21 +102,56 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="128.57142857142856"/>
         </scene>
-        <!--SECOND SCREEN-->
-        <scene sceneID="xaE-3d-4tU">
+        <!--CAKeyframeAnimation-->
+        <scene sceneID="MSp-kz-Y49">
             <objects>
-                <viewController id="c4B-F9-wJJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GDc-9g-sNE">
+                <viewController id="uBr-wa-Fux" customClass="SecondViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWV-Tf-Bix">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Wdx-mh-bzP"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ba-7a-CzD">
+                                <rect key="frame" x="112.5" y="781" width="189" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to CASpringAnimation"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBd-aJ-rbe">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Clr-tC-n0S"/>
+                                    <constraint firstAttribute="height" constant="50" id="i6X-s3-qgW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lightbulb.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-bU-dTu">
+                                <rect key="frame" x="20" y="353" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FVm-2K-pOa"/>
+                                    <constraint firstAttribute="height" constant="50" id="ePW-kX-sBq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wqo-wj-9a9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d9A-bU-dTu" firstAttribute="leading" secondItem="Wqo-wj-9a9" secondAttribute="leading" constant="20" id="6tt-NF-M8T"/>
+                            <constraint firstItem="cBd-aJ-rbe" firstAttribute="centerX" secondItem="eWV-Tf-Bix" secondAttribute="centerX" id="GpB-P3-OBs"/>
+                            <constraint firstItem="Wqo-wj-9a9" firstAttribute="bottom" secondItem="4ba-7a-CzD" secondAttribute="bottom" constant="50" id="KQO-ia-9hL"/>
+                            <constraint firstItem="cBd-aJ-rbe" firstAttribute="centerY" secondItem="eWV-Tf-Bix" secondAttribute="centerY" id="oQf-Xp-nPO"/>
+                            <constraint firstItem="cBd-aJ-rbe" firstAttribute="top" secondItem="d9A-bU-dTu" secondAttribute="bottom" constant="20" id="uXg-v5-Tx3"/>
+                            <constraint firstItem="4ba-7a-CzD" firstAttribute="centerX" secondItem="eWV-Tf-Bix" secondAttribute="centerX" id="uij-Dl-hgs"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SECOND SCREEN" id="HXy-xI-iph"/>
+                    <navigationItem key="navigationItem" title="CAKeyframeAnimation" id="efO-vm-Uw1">
+                        <barButtonItem key="backBarButtonItem" title="BACK" id="Jx2-4r-y0P"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NP7-8M-LBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLt-wk-sMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="129"/>
+            <point key="canvasLocation" x="1841" y="129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Uf-IX-MVb">
@@ -138,6 +173,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="power" catalog="system" width="128" height="124"/>
         <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
