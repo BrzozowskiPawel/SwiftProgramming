@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
     }
     
+    // All code inde components fodler.
     @IBAction func animatedButtonPressed(_ sender: Any) {
         switch animationSegmentedController.selectedSegmentIndex
             {
