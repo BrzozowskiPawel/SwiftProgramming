@@ -285,7 +285,7 @@
         <!--CAReplicatorLayer-->
         <scene sceneID="8GY-A5-big">
             <objects>
-                <viewController id="8yX-zT-ZEg" sceneMemberID="viewController">
+                <viewController id="8yX-zT-ZEg" customClass="FifthViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kea-sG-5Sm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,6 +304,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Anim 1"/>
                                         <connections>
                                             <action selector="circularEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="xeA-zG-ajK"/>
+                                            <action selector="replicationAnimation:" destination="8yX-zT-ZEg" eventType="touchUpInside" id="UhR-4b-var"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAC-5G-Odp">
@@ -311,6 +312,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Anim 2"/>
                                         <connections>
+                                            <action selector="circleLoadingAnimation:" destination="8yX-zT-ZEg" eventType="touchUpInside" id="9Tn-0g-f8P"/>
                                             <action selector="fallingEmission:" destination="Snh-HB-CBw" eventType="touchUpInside" id="9m8-WO-8RS"/>
                                         </connections>
                                     </button>
