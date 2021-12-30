@@ -114,6 +114,9 @@
                                 <rect key="frame" x="112.5" y="781" width="189" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to CASpringAnimation"/>
+                                <connections>
+                                    <segue destination="Oby-Ca-vSQ" kind="show" id="dpE-us-Bb1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBd-aJ-rbe">
                                 <rect key="frame" x="182" y="423" width="50" height="50"/>
@@ -160,6 +163,57 @@
             </objects>
             <point key="canvasLocation" x="1841" y="129"/>
         </scene>
+        <!--CASpringAnimation-->
+        <scene sceneID="1yw-ta-owP">
+            <objects>
+                <viewController id="Oby-Ca-vSQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6e-Jb-izN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-OA-e1q">
+                                <rect key="frame" x="134.5" y="781" width="145" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to CATransition"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV6-T5-uwA">
+                                <rect key="frame" x="182" y="631" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4by-6U-ggw"/>
+                                    <constraint firstAttribute="width" constant="50" id="7x7-iU-AE5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="flame.fill" catalog="system" buttonSize="large"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLz-Yj-nTK">
+                                <rect key="frame" x="182" y="108" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HW5-jB-XbN"/>
+                                    <constraint firstAttribute="height" constant="50" id="QTK-h6-syq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.down" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fmA-K0-yU4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eDb-OA-e1q" firstAttribute="centerX" secondItem="k6e-Jb-izN" secondAttribute="centerX" id="6OG-4J-lZJ"/>
+                            <constraint firstItem="fmA-K0-yU4" firstAttribute="bottom" secondItem="eDb-OA-e1q" secondAttribute="bottom" constant="50" id="7lN-pH-mqS"/>
+                            <constraint firstItem="cLz-Yj-nTK" firstAttribute="centerX" secondItem="k6e-Jb-izN" secondAttribute="centerX" id="Q5T-Nf-BBe"/>
+                            <constraint firstItem="cLz-Yj-nTK" firstAttribute="top" secondItem="fmA-K0-yU4" secondAttribute="top" constant="20" id="nwq-le-4n4"/>
+                            <constraint firstItem="eDb-OA-e1q" firstAttribute="top" secondItem="OV6-T5-uwA" secondAttribute="bottom" constant="100" id="scR-eP-HBr"/>
+                            <constraint firstItem="OV6-T5-uwA" firstAttribute="centerX" secondItem="k6e-Jb-izN" secondAttribute="centerX" id="zbF-xM-zdL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CASpringAnimation" id="FaB-4P-chH">
+                        <barButtonItem key="backBarButtonItem" title="BACK" id="yJW-OH-LWa"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBZ-Vl-lzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="129"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Uf-IX-MVb">
             <objects>
@@ -180,7 +234,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="power" catalog="system" width="128" height="124"/>
         <image name="trash.fill" catalog="system" width="121" height="128"/>
