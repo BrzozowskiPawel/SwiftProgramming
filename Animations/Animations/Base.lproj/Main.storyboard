@@ -172,9 +172,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-OA-e1q">
-                                <rect key="frame" x="134.5" y="781" width="145" height="31"/>
+                                <rect key="frame" x="125" y="781" width="164" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go to CATransition"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to CAEmitterLayer"/>
+                                <connections>
+                                    <segue destination="Snh-HB-CBw" kind="show" id="4cU-2R-w4U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV6-T5-uwA">
                                 <rect key="frame" x="182" y="631" width="50" height="50"/>
@@ -223,6 +226,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBZ-Vl-lzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2646" y="129"/>
+        </scene>
+        <!--CAEmitterLayer-->
+        <scene sceneID="eUr-8A-IjW">
+            <objects>
+                <viewController id="Snh-HB-CBw" customClass="FourthViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NhK-B3-Tz8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-1W-Cut">
+                                <rect key="frame" x="112.5" y="781" width="189" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to CAReplicationLayer"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rLt-Pc-dZh">
+                                <rect key="frame" x="137" y="98" width="140" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-2W-UOh">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Emit 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-jR-An8">
+                                        <rect key="frame" x="75" y="0.0" width="65" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Emit 2"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oRs-N4-flp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oRs-N4-flp" firstAttribute="bottom" secondItem="ASc-1W-Cut" secondAttribute="bottom" constant="50" id="NKy-nH-dvx"/>
+                            <constraint firstItem="ASc-1W-Cut" firstAttribute="centerX" secondItem="NhK-B3-Tz8" secondAttribute="centerX" id="Ruj-DR-ORm"/>
+                            <constraint firstItem="rLt-Pc-dZh" firstAttribute="centerX" secondItem="NhK-B3-Tz8" secondAttribute="centerX" id="iza-6o-I5N"/>
+                            <constraint firstItem="rLt-Pc-dZh" firstAttribute="top" secondItem="oRs-N4-flp" secondAttribute="top" constant="10" id="laX-hO-fuk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAEmitterLayer" id="pBy-SN-QAO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMO-1j-JTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3406" y="129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Uf-IX-MVb">
