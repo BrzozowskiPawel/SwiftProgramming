@@ -123,6 +123,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lightbulb.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="lightbulbPressed:" destination="uBr-wa-Fux" eventType="touchUpInside" id="8r7-pg-dMj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-bU-dTu">
                                 <rect key="frame" x="20" y="353" width="50" height="50"/>
@@ -148,6 +151,10 @@
                     <navigationItem key="navigationItem" title="CAKeyframeAnimation" id="efO-vm-Uw1">
                         <barButtonItem key="backBarButtonItem" title="BACK" id="Jx2-4r-y0P"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="arrow" destination="d9A-bU-dTu" id="sAL-L6-3m3"/>
+                        <outlet property="lightbulb" destination="cBd-aJ-rbe" id="SK6-jR-6ge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLt-wk-sMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
