@@ -3,7 +3,9 @@ import Foundation
 
 // Mark: - Computed properties
 
-let pizzaInches: Int = 14
+let pizzaInches: Int = 12
+var numberOFPeople: Int = 6
+let slicesPerPerson: Int = 5
 
 var numberOfSlices: Int {
     get {
@@ -16,4 +18,18 @@ var numberOfSlices: Int {
     }
 }
 
-numberOfSlices = 12
+
+// Calculate number of pizzas acording to dominos
+var numberOfPizzas: Int {
+    get {
+        let numberOfPeopleFedPerPizza = numberOfSlices / slicesPerPerson
+        return numberOFPeople / numberOfPeopleFedPerPizza
+    } set {
+        let totalSlices = numberOfSlices * newValue // newValue is new value of numberOfPizzas
+        numberOFPeople = totalSlices / slicesPerPerson
+    }
+}
+
+numberOfPizzas = 4
+
+print(numberOfPizzas)
