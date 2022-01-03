@@ -249,3 +249,26 @@ Take a look and ask my questions about it❕ </br>
  <img src="readme_files/MealAppDemo.gif" alt="News App" width="350"/>  </br>
   
 </details>
+
+# Animations ✨
+
+## Animations app.
+<details>
+  <summary>Click to expand details!</summary>
+  This is a basic app that purpose is to show different kinds of animations. </br>
+  UI is minimalistic because this is not a point in this project. </br>
+  Below I present all kinds of created (due today) animations: </br>
+  
+  ### CABasicAnimation:
+ <img src="readme_files/animations_basic.gif" alt="basics" width="356"/>  </br>
+ ### CAKeyframeAnimation:
+ <img src="readme_files/animations_keyframe.gif" alt="basics" width="356"/>  </br>
+ ### CASpringAnimation:
+ <img src="readme_files/animations_spring.gif" alt="basics" width="356"/>  </br>
+ ### CAEmitterLayer:
+ <img src="readme_files/animations_emitter.gif" alt="basics" width="356"/>  </br>
+ ### CAReplicatorLayer:
+ <img src="readme_files/animations_repli.gif" alt="basics" width="356"/>  </br>
+ 
+ This project is still under development 👷🏻‍♂️.
+</details>
