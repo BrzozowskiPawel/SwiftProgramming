@@ -59,7 +59,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 fatalError("ERROR WITH REQUEST")
             }
             
-            print(results)
+            if let firstResults = results.first {
+                if firstResults.identifier.contains("hotdog \(firstResults.confidence)") {
+                    self.navigationItem.title =  "hotdog 🌭"
+                } else {
+                    self.navigationItem.title =  "NOT hotdog!"
+                }
+            }
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
