@@ -154,6 +154,8 @@ Take a look and ask my questions about it❕ </br>
   
 </details> </br>
 
+</br>
+</br>
 # Databases 💾
 
 ## Firebase basics
@@ -230,7 +232,10 @@ Take a look and ask my questions about it❕ </br>
  
  <img src="readme_files/GuideBook_route.gif" alt="News App" width="350"/>  </br>
   
-</details>
+</details> </br>
+
+</br>
+</br>
 
 # iOS App Design 
 
@@ -248,10 +253,12 @@ Take a look and ask my questions about it❕ </br>
   ### App Demo:
  <img src="readme_files/MealAppDemo.gif" alt="News App" width="350"/>  </br>
   
-</details>
+</details> </br>
 
-# Animations ✨
+</br>
+</br>
 
+# Animations ✨ 
 ## Animations app.
 <details>
   <summary>Click to expand details!</summary>
@@ -270,5 +277,17 @@ Take a look and ask my questions about it❕ </br>
  ### CAReplicatorLayer:
  <img src="readme_files/animations_repli.gif" alt="basics" width="356"/>  </br>
  
- This project is still under development 👷🏻‍♂️.
-</details>
+</details> </br>
+
+</br>
+</br>
+
+# Machine Learning 🤖 
+## Hotdog.
+<details>
+  <summary>Click to expand details!</summary>
+  An app that uses Inceptionv3 to choose rather object in the photo is hotdog or not. </br>  This is introduced to CoreML. </br
+ 
+ ### DEMO:
+ <img src="readme_files/hotdog.gif" alt="basics" width="828"/>  </br>
+</details> </br>
