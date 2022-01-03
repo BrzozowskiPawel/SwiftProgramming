@@ -3,8 +3,8 @@
 This repo will contain a wide range of different apps written with Swift on purpose to make me a better programmer. </br>
 The level of difficulty will increase with time. </br>
 I would like to relearn the basics to have solid knowledge and then make more demanding apps. </br>
-All App here is part of this [course](https://codewithchris.com/) not only 👀.</br>
-I try to learn things that I don't know and also add some extra features to them. </br>
+All App here are part of this [course](https://codewithchris.com/) and this [course](https://www.udemy.com/course/ios-13-app-development-bootcamp/) 👀.</br>
+I try to learn things that I don't know and also add some extra features. </br>
 Take a look and ask my questions about it❕ </br>
 
 
