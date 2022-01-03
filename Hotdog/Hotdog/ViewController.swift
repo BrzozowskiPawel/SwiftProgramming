@@ -26,9 +26,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.allowsEditing = false
     }
     
+    // Delegate methods - set imageView ("background" of app) to the selected photot
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // Set imageView image to phohot
+            imageView.image = userPickedImage
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
-        print("CAMERA TAPPED")
+        // As imagePicker is A VC, to show it use present
+        present(imagePicker, animated: true, completion: nil)
     }
     
 }
