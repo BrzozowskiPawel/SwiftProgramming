@@ -22,8 +22,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         // Setup imagePicker
         imagePicker.delegate = self
-//        imagePicker.sourceType = .camera
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
+//        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
     }
     
@@ -60,11 +60,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             
             if let firstResults = results.first {
-                if firstResults.identifier.contains("hotdog \(firstResults.confidence)") {
-                    self.navigationItem.title =  "hotdog 🌭"
-                } else {
-                    self.navigationItem.title =  "NOT hotdog!"
-                }
+                print(firstResults.identifier)
+                print(firstResults.identifier.contains("hotdog"))
+                print(firstResults.confidence)
+                
+                
             }
         }
         
