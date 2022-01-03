@@ -33,9 +33,43 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             // Set imageView image to phohot
             imageView.image = userPickedImage
+            
+            // Change image to CIIMAGE
+            guard let ciimage = CIImage(image: userPickedImage)  else {
+                fatalError("Could not convert to CIImage")
+            }
+            
+            detect(image: ciimage)
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
+    // USE INCEPTIONv3
+    func detect(image: CIImage) {
+        // Using VIsion module performing PhotoDetection
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+            fatalError("Loading coreML failed")
+        }
+        
+        let request = VNCoreMLRequest(model: model) { vnRequest, error in
+            guard let results = vnRequest.results as? [VNClassificationObservation] else {
+                fatalError("ERROR WITH REQUEST")
+            }
+            
+            print(results)
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do {
+            try handler.perform([request])
+        } catch {
+            print("ERROR WHILE PERFORMING CLASSIFICATION")
+        }
+
     }
     
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
