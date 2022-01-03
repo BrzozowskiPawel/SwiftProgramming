@@ -296,7 +296,7 @@
 				DEVELOPMENT_TEAM = 4ZCX8DFXBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hotdog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Guesser;
+				INFOPLIST_KEY_CFBundleDisplayName = Hotdog;
 				INFOPLIST_KEY_NSCameraUsageDescription = "YOO gimme camera ccess 😡";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "NOOOOODLES ACCESS 🍑";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,7 +328,7 @@
 				DEVELOPMENT_TEAM = 4ZCX8DFXBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hotdog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Guesser;
+				INFOPLIST_KEY_CFBundleDisplayName = Hotdog;
 				INFOPLIST_KEY_NSCameraUsageDescription = "YOO gimme camera ccess 😡";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "NOOOOODLES ACCESS 🍑";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
