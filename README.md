@@ -290,5 +290,5 @@ Take a look and ask my questions about it❕ </br>
   An app that uses Inceptionv3 to choose rather object in the photo is hotdog or not. </br>  This is introduced to CoreML. </br
  
  ### DEMO:
- <img src="readme_files/hotdog.gif" alt="basics" width="828"/>  </br>
+ <img src="readme_files/hotdog.gif" alt="basics" height="600/>  </br>
 </details> </br>
