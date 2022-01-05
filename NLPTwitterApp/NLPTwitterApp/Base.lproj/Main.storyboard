@@ -25,6 +25,9 @@
                                 <state key="normal" title="Predict!">
                                     <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="predictPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4re-uI-AFS"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88m-Bc-iiC">
                                 <rect key="frame" x="20" y="736" width="374" height="50"/>
@@ -54,6 +57,10 @@
                             <constraint firstItem="C6d-1v-dpg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBE-qp-VBA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="C6d-1v-dpg" id="Aqe-4X-93Y"/>
+                        <outlet property="textField" destination="88m-Bc-iiC" id="CKQ-L6-lXN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

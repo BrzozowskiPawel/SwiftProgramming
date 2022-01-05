@@ -7,27 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0435FCF227850CDD00A28DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435FCF127850CDD00A28DE0 /* AppDelegate.swift */; };
-		0435FCF427850CDD00A28DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435FCF327850CDD00A28DE0 /* SceneDelegate.swift */; };
-		0435FCF627850CDD00A28DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435FCF527850CDD00A28DE0 /* ViewController.swift */; };
-		0435FCF927850CDD00A28DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0435FCF727850CDD00A28DE0 /* Main.storyboard */; };
-		0435FCFB27850CDE00A28DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0435FCFA27850CDE00A28DE0 /* Assets.xcassets */; };
-		0435FCFE27850CDE00A28DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0435FCFC27850CDE00A28DE0 /* LaunchScreen.storyboard */; };
+		04A927DD278517050075EC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A927DC278517050075EC61 /* AppDelegate.swift */; };
+		04A927DF278517050075EC61 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A927DE278517050075EC61 /* art.scnassets */; };
+		04A927E1278517050075EC61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A927E0278517050075EC61 /* ViewController.swift */; };
+		04A927E4278517050075EC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A927E2278517050075EC61 /* Main.storyboard */; };
+		04A927E6278517060075EC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A927E5278517060075EC61 /* Assets.xcassets */; };
+		04A927E9278517060075EC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A927E7278517060075EC61 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0435FCEE27850CDD00A28DE0 /* NLPTwitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPTwitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0435FCF127850CDD00A28DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0435FCF327850CDD00A28DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0435FCF527850CDD00A28DE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0435FCF827850CDD00A28DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0435FCFA27850CDE00A28DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0435FCFD27850CDE00A28DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0435FCFF27850CDE00A28DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A927D9278517050075EC61 /* ARDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A927DC278517050075EC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A927DE278517050075EC61 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		04A927E0278517050075EC61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A927E3278517050075EC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A927E5278517060075EC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A927E8278517060075EC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0435FCEB27850CDD00A28DE0 /* Frameworks */ = {
+		04A927D6278517050075EC61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +36,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0435FCE527850CDD00A28DE0 = {
+		04A927D0278517050075EC61 = {
 			isa = PBXGroup;
 			children = (
-				0435FCF027850CDD00A28DE0 /* NLPTwitterApp */,
-				0435FCEF27850CDD00A28DE0 /* Products */,
+				04A927DB278517050075EC61 /* ARDice */,
+				04A927DA278517050075EC61 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0435FCEF27850CDD00A28DE0 /* Products */ = {
+		04A927DA278517050075EC61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0435FCEE27850CDD00A28DE0 /* NLPTwitterApp.app */,
+				04A927D9278517050075EC61 /* ARDice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0435FCF027850CDD00A28DE0 /* NLPTwitterApp */ = {
+		04A927DB278517050075EC61 /* ARDice */ = {
 			isa = PBXGroup;
 			children = (
-				0435FCF127850CDD00A28DE0 /* AppDelegate.swift */,
-				0435FCF327850CDD00A28DE0 /* SceneDelegate.swift */,
-				0435FCF527850CDD00A28DE0 /* ViewController.swift */,
-				0435FCF727850CDD00A28DE0 /* Main.storyboard */,
-				0435FCFA27850CDE00A28DE0 /* Assets.xcassets */,
-				0435FCFC27850CDE00A28DE0 /* LaunchScreen.storyboard */,
-				0435FCFF27850CDE00A28DE0 /* Info.plist */,
+				04A927DC278517050075EC61 /* AppDelegate.swift */,
+				04A927DE278517050075EC61 /* art.scnassets */,
+				04A927E0278517050075EC61 /* ViewController.swift */,
+				04A927E2278517050075EC61 /* Main.storyboard */,
+				04A927E5278517060075EC61 /* Assets.xcassets */,
+				04A927E7278517060075EC61 /* LaunchScreen.storyboard */,
 			);
-			path = NLPTwitterApp;
+			path = ARDice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0435FCED27850CDD00A28DE0 /* NLPTwitterApp */ = {
+		04A927D8278517050075EC61 /* ARDice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0435FD0227850CDE00A28DE0 /* Build configuration list for PBXNativeTarget "NLPTwitterApp" */;
+			buildConfigurationList = 04A927EC278517060075EC61 /* Build configuration list for PBXNativeTarget "ARDice" */;
 			buildPhases = (
-				0435FCEA27850CDD00A28DE0 /* Sources */,
-				0435FCEB27850CDD00A28DE0 /* Frameworks */,
-				0435FCEC27850CDD00A28DE0 /* Resources */,
+				04A927D5278517050075EC61 /* Sources */,
+				04A927D6278517050075EC61 /* Frameworks */,
+				04A927D7278517050075EC61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NLPTwitterApp;
-			productName = NLPTwitterApp;
-			productReference = 0435FCEE27850CDD00A28DE0 /* NLPTwitterApp.app */;
+			name = ARDice;
+			productName = ARDice;
+			productReference = 04A927D9278517050075EC61 /* ARDice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0435FCE627850CDD00A28DE0 /* Project object */ = {
+		04A927D1278517050075EC61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					0435FCED27850CDD00A28DE0 = {
+					04A927D8278517050075EC61 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 0435FCE927850CDD00A28DE0 /* Build configuration list for PBXProject "NLPTwitterApp" */;
+			buildConfigurationList = 04A927D4278517050075EC61 /* Build configuration list for PBXProject "ARDice" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +108,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 0435FCE527850CDD00A28DE0;
-			productRefGroup = 0435FCEF27850CDD00A28DE0 /* Products */;
+			mainGroup = 04A927D0278517050075EC61;
+			productRefGroup = 04A927DA278517050075EC61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0435FCED27850CDD00A28DE0 /* NLPTwitterApp */,
+				04A927D8278517050075EC61 /* ARDice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0435FCEC27850CDD00A28DE0 /* Resources */ = {
+		04A927D7278517050075EC61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0435FCFE27850CDE00A28DE0 /* LaunchScreen.storyboard in Resources */,
-				0435FCFB27850CDE00A28DE0 /* Assets.xcassets in Resources */,
-				0435FCF927850CDD00A28DE0 /* Main.storyboard in Resources */,
+				04A927DF278517050075EC61 /* art.scnassets in Resources */,
+				04A927E9278517060075EC61 /* LaunchScreen.storyboard in Resources */,
+				04A927E6278517060075EC61 /* Assets.xcassets in Resources */,
+				04A927E4278517050075EC61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0435FCEA27850CDD00A28DE0 /* Sources */ = {
+		04A927D5278517050075EC61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0435FCF627850CDD00A28DE0 /* ViewController.swift in Sources */,
-				0435FCF227850CDD00A28DE0 /* AppDelegate.swift in Sources */,
-				0435FCF427850CDD00A28DE0 /* SceneDelegate.swift in Sources */,
+				04A927E1278517050075EC61 /* ViewController.swift in Sources */,
+				04A927DD278517050075EC61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0435FCF727850CDD00A28DE0 /* Main.storyboard */ = {
+		04A927E2278517050075EC61 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0435FCF827850CDD00A28DE0 /* Base */,
+				04A927E3278517050075EC61 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0435FCFC27850CDE00A28DE0 /* LaunchScreen.storyboard */ = {
+		04A927E7278517060075EC61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0435FCFD27850CDE00A28DE0 /* Base */,
+				04A927E8278517060075EC61 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0435FD0027850CDE00A28DE0 /* Debug */ = {
+		04A927EA278517060075EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		0435FD0127850CDE00A28DE0 /* Release */ = {
+		04A927EB278517060075EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +280,7 @@
 			};
 			name = Release;
 		};
-		0435FD0327850CDE00A28DE0 /* Debug */ = {
+		04A927ED278517060075EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,11 +289,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZCX8DFXBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NLPTwitterApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TwitterNLP;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.NLPTwitterApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.ARDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		0435FD0427850CDE00A28DE0 /* Release */ = {
+		04A927EE278517060075EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,11 +319,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZCX8DFXBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NLPTwitterApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TwitterNLP;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.NLPTwitterApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelbrzozowski.ARDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0435FCE927850CDD00A28DE0 /* Build configuration list for PBXProject "NLPTwitterApp" */ = {
+		04A927D4278517050075EC61 /* Build configuration list for PBXProject "ARDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0435FD0027850CDE00A28DE0 /* Debug */,
-				0435FD0127850CDE00A28DE0 /* Release */,
+				04A927EA278517060075EC61 /* Debug */,
+				04A927EB278517060075EC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0435FD0227850CDE00A28DE0 /* Build configuration list for PBXNativeTarget "NLPTwitterApp" */ = {
+		04A927EC278517060075EC61 /* Build configuration list for PBXNativeTarget "ARDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0435FD0327850CDE00A28DE0 /* Debug */,
-				0435FD0427850CDE00A28DE0 /* Release */,
+				04A927ED278517060075EC61 /* Debug */,
+				04A927EE278517060075EC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0435FCE627850CDD00A28DE0 /* Project object */;
+	rootObject = 04A927D1278517050075EC61 /* Project object */;
 }
