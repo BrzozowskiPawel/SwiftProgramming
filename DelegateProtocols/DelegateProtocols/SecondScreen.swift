@@ -14,7 +14,7 @@ import UIKit
 
 // 1. Setting up Protocol (on master side)
 protocol SideSelectionDelegate {
-    // Just a list of function WITHOUT CODE (list of commands)
+    // Just a list of function WITHOUT CODE (list of functions names)
     func didTapChoice(image: UIImage, name: String, color: UIColor)
 }
 

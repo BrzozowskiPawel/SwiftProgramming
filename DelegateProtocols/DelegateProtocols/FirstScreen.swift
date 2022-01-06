@@ -17,10 +17,9 @@ import UIKit
 class FirstScreen: UIViewController {
 
     @IBOutlet weak var mainImageView: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var chooseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
