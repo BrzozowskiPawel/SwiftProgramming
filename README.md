@@ -292,3 +292,17 @@ Take a look and ask my questions about it❕ </br>
  ### DEMO:
  <img src="readme_files/hotdog.gif" alt="basics" height="600"/>  </br>
 </details> </br>
+
+
+</br>
+</br>
+
+# Other 🦄
+## PAN gesture.
+<details>
+  <summary>Click to expand details!</summary>
+  An app that allows the user to drag an image and put it inside of trash to delete using gesture recognition. </br>
+ 
+ ### DEMO:
+ <img src="readme_files/GesturePAN_demo.gif" alt="basics" height="386"/>  </br>
+</details> </br>
