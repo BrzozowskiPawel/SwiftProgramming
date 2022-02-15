@@ -62,7 +62,6 @@
 		047C871627BC323D00727765 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
-				047C872C27BC352900727765 /* New Group */,
 				047C872B27BC352200727765 /* Controllers */,
 				047C871727BC323D00727765 /* AppDelegate.swift */,
 				047C871927BC323D00727765 /* SceneDelegate.swift */,
@@ -83,13 +82,6 @@
 				047C873327BC359200727765 /* DowloadsViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		047C872C27BC352900727765 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

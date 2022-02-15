@@ -12,7 +12,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .yellow
+        view.backgroundColor = .systemBackground
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: UpcomingViewController())
@@ -27,7 +27,9 @@ class MainTabBarViewController: UITabBarController {
         vc1.title = "Home"
         vc2.title = "Coming"
         vc3.title = "Search"
-        vc4.title = "Dwoloads"
+        vc4 .title = "Dwoloads"
+        
+        tabBar.tintColor = .label
         
         setViewControllers([vc1,vc2,vc3,vc4], animated: true)
     }
