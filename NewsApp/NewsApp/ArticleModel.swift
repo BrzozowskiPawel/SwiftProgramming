@@ -54,7 +54,5 @@ class ArticleModel{
         }
         // Start the data task
         dataTask.resume()
-        
-       
     }
 }
