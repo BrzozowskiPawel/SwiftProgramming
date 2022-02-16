@@ -9,6 +9,16 @@ import UIKit
 
 class HeroHeaderUIView: UIView {
 
+    private let dowloadButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Dowload", for: .normal)
+        button.layer.borderColor = UIColor.systemBackground.cgColor
+        button.layer.borderWidth = 1
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
     private let playButton: UIButton = {
         let button = UIButton()
         button.setTitle("Play", for: .normal)
@@ -40,11 +50,19 @@ class HeroHeaderUIView: UIView {
     
     private func applyConstraints() {
         let playButtonConstraintes = [
-            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
-            playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20)
+            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 90),
+            playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            playButton.widthAnchor.constraint(equalToConstant: 100)
+        ]
+        
+        let dowloadButtonConstraintes = [
+            dowloadButton.leadingAnchor.constraint(equalTo: trailingAnchor, constant: -90),
+            dowloadButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            dowloadButton.widthAnchor.constraint(equalToConstant: 100)
         ]
         
         NSLayoutConstraint.activate(playButtonConstraintes)
+        NSLayoutConstraint.activate(dowloadButtonConstraintes)
     }
     
     override init(frame: CGRect) {
@@ -56,8 +74,9 @@ class HeroHeaderUIView: UIView {
         // Apply gradient
         addGradient()
         
-        // Add play button
+        // Add play buttons
         addSubview(playButton)
+        addSubview(dowloadButton)
         
         // Apply constarints
         applyConstraints()
