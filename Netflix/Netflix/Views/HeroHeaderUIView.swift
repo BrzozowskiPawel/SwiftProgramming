@@ -15,7 +15,7 @@ class HeroHeaderUIView: UIView {
         button.layer.borderColor = UIColor.systemBackground.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
-        
+        button.layer.cornerRadius = 5
         return button
     }()
     
@@ -25,7 +25,7 @@ class HeroHeaderUIView: UIView {
         button.layer.borderColor = UIColor.systemBackground.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
-        
+        button.layer.cornerRadius = 5
         return button
     }()
     
@@ -50,13 +50,13 @@ class HeroHeaderUIView: UIView {
     
     private func applyConstraints() {
         let playButtonConstraintes = [
-            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 90),
+            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 70),
             playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
             playButton.widthAnchor.constraint(equalToConstant: 100)
         ]
         
         let dowloadButtonConstraintes = [
-            dowloadButton.leadingAnchor.constraint(equalTo: trailingAnchor, constant: -90),
+            dowloadButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -70),
             dowloadButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
             dowloadButton.widthAnchor.constraint(equalToConstant: 100)
         ]

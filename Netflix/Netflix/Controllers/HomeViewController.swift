@@ -31,10 +31,28 @@ class HomeViewController: UIViewController {
         // Setup header
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
+        
+        // Configure navbar
+        configureNavBar()
+    }
+    
+    private func configureNavBar() {
+//        var image = UIImage(named: "logo")
+//        // Force iOS to render image as original
+//        image = image?.withRenderingMode(.alwaysOriginal)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
+            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+        ]
+        
+        navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         // Cover the whole screen
         homeFeedTable.frame = view.bounds
     }
