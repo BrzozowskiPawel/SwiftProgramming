@@ -83,4 +83,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
+    
+    // Hide navigationbar when it's scrolled out
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // Offset of the top insets of the screen
+        let defaultOffset = view.safeAreaInsets.top
+        let offset = scrollView.contentOffset.y + defaultOffset
+        
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0,-offset))
+    }
 }
