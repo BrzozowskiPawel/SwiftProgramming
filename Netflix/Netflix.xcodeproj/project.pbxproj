@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0452DCB827C270500034B741 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452DCB727C270500034B741 /* APICaller.swift */; };
 		047C871827BC323D00727765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871727BC323D00727765 /* AppDelegate.swift */; };
 		047C871A27BC323D00727765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871927BC323D00727765 /* SceneDelegate.swift */; };
 		047C871C27BC323D00727765 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871B27BC323D00727765 /* MainTabBarViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0452DCB727C270500034B741 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		047C871427BC323D00727765 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C871727BC323D00727765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047C871927BC323D00727765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		047C873927BC3A5B00727765 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0452DCB727C270500034B741 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				047C873227BC357600727765 /* SearchViewController.swift in Sources */,
 				047C873427BC359200727765 /* DowloadsViewController.swift in Sources */,
 				047C873B27BC3A9600727765 /* CollectionViewTableViewCell.swift in Sources */,
+				0452DCB827C270500034B741 /* APICaller.swift in Sources */,
 				049E8F7A27BD3893005D592A /* HeroHeaderUIView.swift in Sources */,
 				047C871C27BC323D00727765 /* MainTabBarViewController.swift in Sources */,
 				047C871827BC323D00727765 /* AppDelegate.swift in Sources */,
