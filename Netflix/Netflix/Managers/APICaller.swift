@@ -12,24 +12,47 @@ struct Constatnts {
     static let baseURL = "https://api.themoviedb.org"
 }
 
+enum APIError: Error{
+    case failedToGetData
+}
 
 class APICaller {
     
     static let shared = APICaller()
     
-    func getTrendingMovies(completion: @escaping(String) -> Void) {
+    func getTrendingMovies(completion: @escaping (Result<[Movie],Error>) -> Void) {
         
-        guard let url = URL(string: "\(Constatnts.baseURL)/3/trending/all/day?api_key=\(Constatnts.APIKey)") else { return }
+        guard let url = URL(string: "\(Constatnts.baseURL)/3/trending/movie/day?api_key=\(Constatnts.APIKey)") else { return }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             guard let data = data, error == nil else {return}
             do {
-                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(results)
+                // let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                let results = try JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
+                completion(.success(results.results))
             } catch {
-                print(error.localizedDescription)
+                completion(.failure(error))
             }
         }
         task.resume()
+    }
+    
+    func getTrendingTV(completion: @escaping (Result<[String],Error>) -> Void) {
+        guard let url = URL(string: "\(Constatnts.baseURL)/3/trending/tv/day?api_key=\(Constatnts.APIKey)") else {return}
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, error == nil else {return}
+            do {
+                let results = try JSONDecoder().decode(TrendingTvResponse.self, from: data)
+                print(results)
+            } catch {
+                completion(.failure(error))
+            }
+        }
+        task.resume()
+    }
+    
+    func getUpComingMovies() {
+        
     }
 }

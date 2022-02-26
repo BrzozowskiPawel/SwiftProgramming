@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    let sectionTitles = ["Trailing Movies", "Popular", "Trending", "Upcoming Movies" , "Top Rated"]
+    let sectionTitles = ["Trailing Movies", "Trending", "Popular", "Upcoming Movies" , "Top Rated"]
     
     // Create a tableVuew
     private let homeFeedTable: UITableView = {
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
         // Configure navbar
         configureNavBar()
         
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavBar() {
@@ -61,8 +61,17 @@ class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
     
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { _ in
+    private func fetchData() {
+//        APICaller.shared.getTrendingMovies { results in
+//            switch results {
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        
+        APICaller.shared.getTrendingTV { results in
             
         }
     }
@@ -107,7 +116,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text =  header.textLabel?.text?.lowercased()
+        header.textLabel?.text =  header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     // Hide navigationbar when it's scrolled out
