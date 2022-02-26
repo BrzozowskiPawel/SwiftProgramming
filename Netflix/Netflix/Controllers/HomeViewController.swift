@@ -71,8 +71,9 @@ class HomeViewController: UIViewController {
 //            }
 //        }
         
-        APICaller.shared.getTrendingTV { results in
-            
+//        APICaller.shared.getTrendingTV { results in
+//        }
+        APICaller.shared.getTopRatedMovies { results in
         }
     }
 

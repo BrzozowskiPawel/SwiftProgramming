@@ -52,7 +52,57 @@ class APICaller {
         task.resume()
     }
     
-    func getUpComingMovies() {
+    func getUpComingMovies(completion: @escaping (Result<[Movie],Error>) -> Void) {
+        guard let url = URL(string: "\(Constatnts.baseURL)/3/movie/upcoming?api_key=\(Constatnts.APIKey)&language=en-US&page=1") else {
+            return
+        }
         
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, error == nil else {return}
+            
+            do {
+                let results = try JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
+                print(results)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
+    }
+    
+    func getPopularMovies(completion: @escaping (Result<[Movie],Error>) -> Void) {
+        guard let url = URL(string: "\(Constatnts.baseURL)/3/movie/popular?api_key=\(Constatnts.APIKey)&language=en-US&page=1") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, error == nil else {return}
+            
+            do {
+                let results = try JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
+                print(results)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
+    }
+    
+    func getTopRatedMovies(completion: @escaping (Result<[Movie],Error>) -> Void) {
+        guard let url = URL(string: "\(Constatnts.baseURL)/3/movie/top_rated?api_key=\(Constatnts.APIKey)&language=en-US&page=1") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, error == nil else {return}
+            
+            do {
+                let results = try JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
+                print(results)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
     }
 }
