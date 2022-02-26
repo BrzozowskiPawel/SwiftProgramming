@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04479D6727C2BF8300E83AC3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479D6627C2BF8300E83AC3 /* Movie.swift */; };
+		04479D6727C2BF8300E83AC3 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479D6627C2BF8300E83AC3 /* Title.swift */; };
 		04479D6927C2C29600E83AC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479D6827C2C29600E83AC3 /* Extensions.swift */; };
 		0452DCB827C270500034B741 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452DCB727C270500034B741 /* APICaller.swift */; };
-		0463A6D227C2E223000468A9 /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6D127C2E223000468A9 /* Tv.swift */; };
 		047C871827BC323D00727765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871727BC323D00727765 /* AppDelegate.swift */; };
 		047C871A27BC323D00727765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871927BC323D00727765 /* SceneDelegate.swift */; };
 		047C871C27BC323D00727765 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C871B27BC323D00727765 /* MainTabBarViewController.swift */; };
@@ -25,10 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04479D6627C2BF8300E83AC3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		04479D6627C2BF8300E83AC3 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		04479D6827C2C29600E83AC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0452DCB727C270500034B741 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		0463A6D127C2E223000468A9 /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 		047C871427BC323D00727765 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C871727BC323D00727765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047C871927BC323D00727765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,8 +118,7 @@
 		047C873727BC3A3E00727765 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04479D6627C2BF8300E83AC3 /* Movie.swift */,
-				0463A6D127C2E223000468A9 /* Tv.swift */,
+				04479D6627C2BF8300E83AC3 /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				047C873227BC357600727765 /* SearchViewController.swift in Sources */,
-				0463A6D227C2E223000468A9 /* Tv.swift in Sources */,
 				047C873427BC359200727765 /* DowloadsViewController.swift in Sources */,
 				047C873B27BC3A9600727765 /* CollectionViewTableViewCell.swift in Sources */,
 				0452DCB827C270500034B741 /* APICaller.swift in Sources */,
@@ -223,7 +219,7 @@
 				04479D6927C2C29600E83AC3 /* Extensions.swift in Sources */,
 				047C871A27BC323D00727765 /* SceneDelegate.swift in Sources */,
 				047C873027BC356000727765 /* UpcomingViewController.swift in Sources */,
-				04479D6727C2BF8300E83AC3 /* Movie.swift in Sources */,
+				04479D6727C2BF8300E83AC3 /* Title.swift in Sources */,
 				047C872E27BC354200727765 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
