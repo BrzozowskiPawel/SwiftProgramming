@@ -15,6 +15,7 @@ class TitleTableViewCell: UITableViewCell {
     private let titlePosterUIImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -53,12 +54,12 @@ class TitleTableViewCell: UITableViewCell {
         ]
         
         let titleLabelConstraints = [
-            titleLabel.leadingAnchor.constraint(equalTo: titlePosterUIImageView.trailingAnchor, constant: 20),
+            titleLabel.leadingAnchor.constraint(equalTo: titlePosterUIImageView.trailingAnchor, constant: 10),
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
         
         let playTitleButtonConstraints = [
-            playTitleButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            playTitleButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             playTitleButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
         
