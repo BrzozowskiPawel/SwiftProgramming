@@ -43,6 +43,7 @@ class SearchViewController: UIViewController {
         
         // Add search controller
         navigationItem.searchController = searchController
+        navigationController?.navigationBar.tintColor = .white
         
         fetchDiscoverMovies()
     }
