@@ -149,7 +149,7 @@ class APICaller {
         task.resume()
     }
     
-    func getMovie(with query: String) {
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement,Error>) -> Void) {
         // Take care of formatting URL
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {
             return
@@ -163,9 +163,12 @@ class APICaller {
             guard let data = data, error == nil else {return}
             
             do {
-                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(results)
+//                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                let results = try JSONDecoder().decode(YouTubeResponse.self, from: data)
+                // Get only first element - it's best fit
+                completion(.success(results.items[0]))
             } catch {
+                completion(.failure(error))
                 print(error.localizedDescription)
             }
         }
