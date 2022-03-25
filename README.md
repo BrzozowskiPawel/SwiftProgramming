@@ -305,4 +305,6 @@ Take a look and ask my questions about it❕ </br>
  
  ### DEMO:
  <img src="readme_files/GesturePAN_demo.gif" alt="basics" height="386"/>  </br>
-</details> </br>
+</details> </br> </br>
+
+made with ❤️ in swift. 
